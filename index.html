@@ -10,301 +10,417 @@
 .food-section{padding-bottom:75px}.birthday{background:#ecddc8;display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:38px;margin-bottom:32px;border-radius:4px}.birthday h3{font:500 33px var(--serif);margin:0 0 20px}.birthday h3 span{font:400 13px var(--sans);display:block;margin-top:8px;color:var(--muted)}.birthday p{font-size:12px}.birthday .birthday-lead{font-size:15px}.birthday .primary{margin-top:16px;font-size:11px}.birthday-budget{padding-left:28px;border-left:1px solid #cdb89d}.birthday-budget>strong{font:500 34px var(--serif)}.birthday-budget>strong span{font:400 11px var(--sans)}.birthday-budget ul{font-size:11px;padding-left:17px;color:#695342}.birthday-budget li{padding-bottom:8px}.birthday-budget>a{font-size:11px;text-decoration:underline}.restaurant-list{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.restaurant-list article{border-top:1px solid var(--line);padding-top:18px}.restaurant-list span{font-size:10px;color:var(--orange)}.restaurant-list h3{font:500 17px/1.5 var(--serif)}.restaurant-list p{font-size:12px;color:var(--muted)}.restaurant-list a,.food-footnote{font-size:11px}.restaurant-list a{color:var(--orange)}.food-footnote{color:var(--muted);margin-top:24px}@media(max-width:850px){.birthday{gap:25px;padding:28px}.restaurant-list{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.birthday{grid-template-columns:1fr;padding:24px;gap:25px}.birthday-budget{border-left:0;border-top:1px solid #cdb89d;padding-left:0;padding-top:25px}.birthday h3{font-size:28px}.restaurant-list{gap:20px}.restaurant-list h3{font-size:16px}.food-section{padding-bottom:45px}}
 
 .stay-image .photo-fallback{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;margin:0;padding:25px;border:0;background:#e0cfb5;color:#44382f}.photo-fallback strong{font-size:14px;font-weight:500}.photo-fallback small{font-size:11px;margin-top:10px}.stay-image img{position:relative;z-index:1}.stay-image>span{z-index:2}.stay-image.photo-failed img{display:none}.stay-image.photo-loaded .photo-fallback{display:none}
+.day-flag{background:#f3dfcf;color:#8a3a16;font-size:12px;padding:9px 12px;border-radius:3px;margin:12px 0 0}.who{display:inline-block;font-size:10px;font-weight:500;padding:1px 8px;border-radius:10px;margin-right:8px;vertical-align:2px;letter-spacing:.5px}.who.vm{background:#c75524;color:#fff9f0}.who.sy{background:#69754e;color:#fff9f0}.who.all{background:var(--tea);color:var(--ink)}.stay-grid.four{grid-template-columns:repeat(2,1fr)}.cands{list-style:none;padding:0;margin:12px 0 0}.cands li{border-top:1px solid var(--line);padding:10px 0;font-size:12px;color:var(--muted);line-height:1.7}.stay .cands a,.birthday .cands a{margin-top:0;font-size:13px;color:var(--ink);font-weight:500;padding-bottom:1px;border-bottom:1px solid var(--ink);display:inline}.birthday .cands li{border-color:#cdb89d;color:#695342}.prep-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;padding-top:40px;border-top:1px solid var(--line)}.prep-grid h3{font:500 20px var(--serif);margin:0 0 12px}.prep-grid h3.sub{margin-top:32px}.checklist{list-style:none;padding:0;margin:0;font-size:13px}.checklist li{padding:8px 0 8px 26px;border-bottom:1px solid var(--line);position:relative}.checklist li:before{content:'';position:absolute;left:0;top:14px;width:11px;height:11px;border:1px solid var(--orange);border-radius:2px}.phrase{display:grid;grid-template-columns:1fr 1.2fr;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}.phrase span:last-child{color:var(--orange)}.emer{font-size:12px;color:var(--muted);margin:10px 0 0}@media(max-width:640px){.stay-grid.four{grid-template-columns:1fr}.prep-grid{grid-template-columns:1fr;gap:36px}}
 </style>
 </head>
 <body>
 <header class="topbar"><a class="brand" href="#home"><span class="orange-dot"></span> JEJU, SLOWLY.</a><nav aria-label="主選單"><a href="#journey">每日行程</a><a href="#food">吃什麼</a><a href="#stays">住下來</a><a href="#notes">出發筆記</a></nav><button id="share" class="share">分享旅程 ↗</button></header>
 <main id="home">
 <section class="hero wrap">
-<div class="hero-copy"><p class="eyebrow">A WINTER ROAD TRIP · 2027</p><p class="date">JAN 09 <span>—</span> JAN 15</p><h1>橘子色的<br>濟州冬日<span class="period">。</span></h1><p class="intro">海岸、山茶花，還有剛剝開的橘子香。<br>四個人，一台車，逆時鐘把冬天走一圈。</p><a class="primary" href="#journey">翻開我們的七天 <span>↓</span></a><div class="trip-meta"><span>7 天 6 夜</span><span>4 人自駕</span><span>3 個落腳處</span></div></div>
-<div class="map-paper"><div class="map-top"><span>OUR LITTLE ISLAND LOOP</span><span>逆時鐘 ↺</span></div><div id="island-map"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" role="img" aria-labelledby="map-title map-desc"><title id="map-title">濟州逆時鐘環島路線</title><desc id="map-desc">從濟州市向西到愛月與翰林，再往山茶花之丘、西歸浦與南元，沿東岸經城山、細花返回濟州市。1月11日從南部自駕往返漢拿山1100高地賞雪。住宿為西部一晚、南部兩晚、北部三晚。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c75524"/></marker></defs><path d="M441.2,71.4 L466.5,77.1 L476.6,75.0 L481.0,87.8 L499.9,99.2 L506.9,96.3 L520.1,98.5 L532.7,114.9 L525.8,130.5 L538.4,139.1 L539.7,150.5 L529.6,183.3 L528.3,193.9 L511.9,201.1 L503.7,213.9 L504.3,220.3 L491.1,233.8 L491.1,243.8 L479.7,254.5 L456.4,256.6 L446.3,254.5 L438.1,264.5 L425.5,274.5 L410.3,275.2 L383.8,282.3 L368.7,280.9 L359.8,289.4 L347.9,295.1 L346.0,300.8 L334.6,305.1 L328.3,299.4 L299.9,303.0 L284.8,301.5 L277.2,308.7 L267.1,307.2 L253.8,311.5 L247.5,303.0 L229.9,306.5 L215.4,298.0 L190.1,307.9 L182.5,304.4 L169.9,305.1 L163.0,301.5 L142.2,316.5 L139.0,327.2 L127.0,333.6 L108.7,313.7 L104.9,305.1 L84.8,298.0 L72.8,288.7 L58.9,265.2 L63.3,248.1 L60.1,233.1 L70.9,224.6 L72.1,218.2 L82.9,213.2 L97.4,195.4 L104.3,196.1 L114.4,187.5 L122.6,176.1 L122.6,162.6 L140.9,157.6 L149.7,151.2 L154.8,139.1 L169.9,140.5 L180.0,133.4 L189.5,132.7 L200.2,124.8 L214.1,127.0 L226.1,121.3 L243.1,118.4 L262.0,109.2 L269.0,102.0 L279.1,105.6 L326.4,98.5 L333.3,89.9 L357.3,91.3 L363.6,77.8 L375.6,86.4 L384.5,79.9 L390.8,82.8 L417.3,74.2 L422.3,77.8 L436.2,76.4 L441.2,71.4 Z" fill="#e0cfb5" stroke="#c9b799" stroke-width="1.2"/><path d="M267.6,108.3 L196.4,138.4 L118.5,184.0 L76.5,238.1 L89.2,280.9 L146.0,295.1 L189.5,267.3 L246.9,288.0 L312.7,296.1 L411.0,259.5 L486.7,223.9 L551.0,146.6 L500.5,99.4 L442.5,88.5 L360.5,102.7 L297.4,109.9 L267.6,108.3" fill="none" stroke="#c75524" stroke-width="2.2" stroke-linejoin="round"/><path d="M267.6,108.3 L196.4,138.4 L118.5,184.0" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M76.5,238.1 L89.2,280.9 L146.0,295.1" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M189.5,267.3 L246.9,288.0 L312.7,296.1" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M411.0,259.5 L486.7,223.9 L551.0,146.6" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M500.5,99.4 L442.5,88.5 L360.5,102.7" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><text x="335" y="230" text-anchor="middle" font-size="24" font-family="Georgia,serif" letter-spacing="6" fill="#9c876d">JEJU</text><text x="335" y="255" text-anchor="middle" font-size="11" fill="#7c6c5c">冬日，逆時鐘慢慢玩</text><g font-family="sans-serif"><circle cx="267.6000000000013" cy="108.3074999999988" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="267.6000000000013" y="78.3074999999988" text-anchor="middle" font-size="14" fill="#44382f">濟州市</text><text x="267.6000000000013" y="97.3074999999988" text-anchor="middle" font-size="11" fill="#7c6c5c">1/12–15 · 住三晚</text></g><g font-family="sans-serif"><circle cx="118.50595238095367" cy="184.04624999999695" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="114.50595238095367" y="154.04624999999695" text-anchor="middle" font-size="14" fill="#44382f">愛月／翰林</text><text x="114.50595238095367" y="173.04624999999695" text-anchor="middle" font-size="11" fill="#7c6c5c">1/9 · 採橘子、UMU</text></g><g font-family="sans-serif"><circle cx="189.48809523809476" cy="267.3374999999977" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="174.48809523809476" y="296.3374999999977" text-anchor="end" font-size="14" fill="#44382f">山茶花之丘</text><text x="174.48809523809476" y="315.3374999999977" text-anchor="end" font-size="11" fill="#7c6c5c">1/10 · 花園午後</text></g><g font-family="sans-serif"><circle cx="312.71309523809674" cy="296.1224999999964" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="312.71309523809674" y="326.1224999999964" text-anchor="middle" font-size="14" fill="#44382f">西歸浦／南元</text><text x="312.71309523809674" y="345.1224999999964" text-anchor="middle" font-size="11" fill="#7c6c5c">1/10–11 · 住南部</text></g><g font-family="sans-serif"><circle cx="551.0238095238049" cy="146.5687499999982" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="567.0238095238049" y="158.5687499999982" text-anchor="start" font-size="14" fill="#44382f">城山</text><text x="567.0238095238049" y="177.5687499999982" text-anchor="start" font-size="11" fill="#7c6c5c">1/12</text></g><g font-family="sans-serif"><circle cx="500.54761904761546" cy="99.40124999999676" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="500.54761904761546" y="71.40124999999676" text-anchor="middle" font-size="14" fill="#44382f">細花</text><text x="500.54761904761546" y="90.40124999999676" text-anchor="middle" font-size="11" fill="#7c6c5c">1/12</text></g><g aria-label="1月11日自駕賞雪往返支線"><path d="M312.7,296.1 L246.9,288.0 L232.3,231.1" fill="none" stroke="#69754e" stroke-width="2" stroke-dasharray="5 4"/><circle cx="232.3" cy="231.1" r="5" fill="#69754e" stroke="#f7f2e9" stroke-width="2"/><text x="235" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#44382f">1100 高地</text><text x="235" y="209" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#7c6c5c">1/11 · 自駕賞雪往返</text></g><text x="625" y="65" font-size="11" fill="#7c6c5c">北 ↑</text><text x="330" y="395" text-anchor="middle" font-size="10" fill="#7c6c5c">實線：環島方向 · 虛線：賞雪往返 · 非道路導航</text></svg></div><div class="map-bottom"><span>西岸 → 南岸 → 東岸 → 濟州市</span><span>01 — 07</span></div></div>
+<div class="hero-copy"><p class="eyebrow">A WINTER ROAD TRIP · 2027</p><p class="date">JAN 09 <span>—</span> JAN 15</p><h1>橘子色的<br>濟州冬日<span class="period">。</span></h1><p class="intro">海岸、山茶花，還有剛剝開的橘子香。<br>四個人，一台車，逆時鐘把冬天走一圈。</p><a class="primary" href="#journey">翻開我們的七天 <span>↓</span></a><div class="trip-meta"><span>7 天 6 夜</span><span>4 人自駕</span><span>3–4 個落腳處</span></div></div>
+<div class="map-paper"><div class="map-top"><span>OUR LITTLE ISLAND LOOP</span><span>逆時鐘 ↺</span></div><div id="island-map"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" role="img" aria-labelledby="map-title map-desc"><title id="map-title">濟州逆時鐘環島路線</title><desc id="map-desc">從濟州市向西到愛月與翰林，再往山茶花之丘、西歸浦與南元，沿東岸經細花、城山返回濟州市。1月11日從西歸浦經1100高地到濟州市；1月15日思琪與玉米去思連岳林道。住宿為協才一晚、西歸浦一晚，其餘以濟州市為主，1/12 待定。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c75524"/></marker></defs><path d="M441.2,71.4 L466.5,77.1 L476.6,75.0 L481.0,87.8 L499.9,99.2 L506.9,96.3 L520.1,98.5 L532.7,114.9 L525.8,130.5 L538.4,139.1 L539.7,150.5 L529.6,183.3 L528.3,193.9 L511.9,201.1 L503.7,213.9 L504.3,220.3 L491.1,233.8 L491.1,243.8 L479.7,254.5 L456.4,256.6 L446.3,254.5 L438.1,264.5 L425.5,274.5 L410.3,275.2 L383.8,282.3 L368.7,280.9 L359.8,289.4 L347.9,295.1 L346.0,300.8 L334.6,305.1 L328.3,299.4 L299.9,303.0 L284.8,301.5 L277.2,308.7 L267.1,307.2 L253.8,311.5 L247.5,303.0 L229.9,306.5 L215.4,298.0 L190.1,307.9 L182.5,304.4 L169.9,305.1 L163.0,301.5 L142.2,316.5 L139.0,327.2 L127.0,333.6 L108.7,313.7 L104.9,305.1 L84.8,298.0 L72.8,288.7 L58.9,265.2 L63.3,248.1 L60.1,233.1 L70.9,224.6 L72.1,218.2 L82.9,213.2 L97.4,195.4 L104.3,196.1 L114.4,187.5 L122.6,176.1 L122.6,162.6 L140.9,157.6 L149.7,151.2 L154.8,139.1 L169.9,140.5 L180.0,133.4 L189.5,132.7 L200.2,124.8 L214.1,127.0 L226.1,121.3 L243.1,118.4 L262.0,109.2 L269.0,102.0 L279.1,105.6 L326.4,98.5 L333.3,89.9 L357.3,91.3 L363.6,77.8 L375.6,86.4 L384.5,79.9 L390.8,82.8 L417.3,74.2 L422.3,77.8 L436.2,76.4 L441.2,71.4 Z" fill="#e0cfb5" stroke="#c9b799" stroke-width="1.2"/><path d="M267.6,108.3 L196.4,138.4 L118.5,184.0 L76.5,238.1 L89.2,280.9 L146.0,295.1 L189.5,267.3 L246.9,288.0 L312.7,296.1 L411.0,259.5 L486.7,223.9 L551.0,146.6 L500.5,99.4 L442.5,88.5 L360.5,102.7 L297.4,109.9 L267.6,108.3" fill="none" stroke="#c75524" stroke-width="2.2" stroke-linejoin="round"/><path d="M267.6,108.3 L196.4,138.4 L118.5,184.0" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M76.5,238.1 L89.2,280.9 L146.0,295.1" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M189.5,267.3 L246.9,288.0 L312.7,296.1" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M411.0,259.5 L486.7,223.9 L551.0,146.6" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M500.5,99.4 L442.5,88.5 L360.5,102.7" fill="none" stroke="#c75524" stroke-width="2.2" marker-end="url(#arrow)"/><text x="430" y="205" text-anchor="middle" font-size="24" font-family="Georgia,serif" letter-spacing="6" fill="#9c876d">JEJU</text><text x="430" y="228" text-anchor="middle" font-size="11" fill="#7c6c5c">冬日，逆時鐘慢慢玩</text><g font-family="sans-serif"><circle cx="267.6000000000013" cy="108.3074999999988" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="267.6000000000013" y="78.3074999999988" text-anchor="middle" font-size="14" fill="#44382f">濟州市</text><text x="267.6000000000013" y="97.3074999999988" text-anchor="middle" font-size="11" fill="#7c6c5c">1/11、1/13–14 · 住市區</text></g><g font-family="sans-serif"><circle cx="118.50595238095367" cy="184.04624999999695" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="114.50595238095367" y="154.04624999999695" text-anchor="middle" font-size="14" fill="#44382f">愛月／翰林</text><text x="114.50595238095367" y="173.04624999999695" text-anchor="middle" font-size="11" fill="#7c6c5c">1/9 · 住協才</text></g><g font-family="sans-serif"><circle cx="189.48809523809476" cy="267.3374999999977" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="174.48809523809476" y="296.3374999999977" text-anchor="end" font-size="14" fill="#44382f">山茶花之丘</text><text x="174.48809523809476" y="315.3374999999977" text-anchor="end" font-size="11" fill="#7c6c5c">1/10 · 花園午後</text></g><g font-family="sans-serif"><circle cx="312.71309523809674" cy="296.1224999999964" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="312.71309523809674" y="326.1224999999964" text-anchor="middle" font-size="14" fill="#44382f">西歸浦</text><text x="312.71309523809674" y="345.1224999999964" text-anchor="middle" font-size="11" fill="#7c6c5c">1/10 · 住一晚</text></g><g font-family="sans-serif"><circle cx="551.0238095238049" cy="146.5687499999982" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="567.0238095238049" y="158.5687499999982" text-anchor="start" font-size="14" fill="#44382f">城山</text><text x="567.0238095238049" y="177.5687499999982" text-anchor="start" font-size="11" fill="#7c6c5c">1/12 · 涉地可支</text></g><g font-family="sans-serif"><circle cx="500.54761904761546" cy="99.40124999999676" r="6" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="500.54761904761546" y="71.40124999999676" text-anchor="middle" font-size="14" fill="#44382f">細花</text><text x="500.54761904761546" y="90.40124999999676" text-anchor="middle" font-size="11" fill="#7c6c5c">1/12</text></g><g aria-label="1月11日賞雪後到濟州市"><path d="M312.7,296.1 L232.3,231.1 L267.6,108.3" fill="none" stroke="#69754e" stroke-width="2" stroke-dasharray="5 4"/><circle cx="232.3" cy="231.1" r="5" fill="#69754e" stroke="#f7f2e9" stroke-width="2"/><text x="235" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#44382f">1100 高地</text><text x="235" y="209" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#7c6c5c">1/11 · 賞雪後回市區</text></g><g aria-label="1月15日思連岳林道"><circle cx="340.8" cy="178.7" r="5" fill="#69754e" stroke="#f7f2e9" stroke-width="2"/><text x="345" y="150" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#44382f">思連岳林道</text><text x="345" y="166" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#7c6c5c">1/15 · 思琪 &amp; 玉米</text></g><text x="625" y="65" font-size="11" fill="#7c6c5c">北 ↑</text><text x="330" y="395" text-anchor="middle" font-size="10" fill="#7c6c5c">實線：環島方向 · 虛線：1/11 賞雪、1/15 思連岳 · 非道路導航</text></svg></div><div class="map-bottom"><span>西岸 → 南岸 → 東岸 → 濟州市</span><span>01 — 07</span></div></div>
 </section>
 <div class="ribbon"><span>海邊散步</span><i>✳</i><span>熟成黑豬肉</span><i>✳</i><span>橘子園</span><i>✳</i><span>冬日山茶花</span><i>✳</i><span>設計小店</span><i>✳</i><span>UMU 布丁</span></div>
-<section class="wrap journey" id="journey"><div class="section-heading"><div><p class="eyebrow">THE ITINERARY</p><h2>一天一天，慢慢玩。</h2></div><p>先環島，再留三晚給濟州市。<br>所有時間均為韓國當地時間。</p></div><div class="days" role="tablist" aria-label="選擇旅行日期" id="day-tabs"></div><div id="day-panel" role="tabpanel"></div></section>
+<section class="wrap journey" id="journey"><div class="section-heading"><div><p class="eyebrow">THE ITINERARY</p><h2>一天一天，慢慢玩。</h2></div><p>1/9–1/12 環島，之後以濟州市為基地。<br>所有時間均為韓國當地時間。</p></div><div class="days" role="tablist" aria-label="選擇旅行日期" id="day-tabs"></div><div id="day-panel" role="tabpanel"></div></section>
 <section class="wrap food-section" id="food"><div class="section-heading"><div><p class="eyebrow">A TABLE FOR FOUR</p><h2>四個人的餐桌。</h2></div><p>沿路好好吃飯，生日那晚再隆重一點。</p></div>
-<article class="birthday"><div><p class="eyebrow">JAN 14 · BIRTHDAY DINNER</p><h3>Kitchen Gla <span>키친글라</span></h3><p class="birthday-lead">一間有氣氛、適合四人分享的延洞義式餐酒館。</p><p>牛排配義大利麵、燉飯與前菜，慶生有儀式感，也能保留聊天的輕鬆。安排 18:00 用餐；下午的購物可視精神刪減。</p><a class="primary" href="https://map.naver.com/p/search/%ED%82%A4%EC%B9%9C%EA%B8%80%EB%9D%BC" target="_blank" rel="noopener noreferrer">查看位置與店家資訊 ↗</a></div><div class="birthday-budget"><p class="eyebrow">OUR DINNER BUDGET</p><strong>NT$1,500<span> / 人左右</span></strong><p>四人整餐目標：₩200,000–240,000<br>約 NT$4,880–5,850，另留蛋糕預算。</p><ul><li>參考：2 人牛排＋麵／麵疙瘩組合 ₩76,000；四人可先看兩組，再補前菜與甜點。</li><li>以上是第三方菜單參考及規劃估算，並非已確認報價；暫以 1 TWD ≈ 41 KRW 換算。</li><li>先訂四人桌，確認 1/14 營業、最新價格、自帶蛋糕與切糕費。酒款另計，尚未訂位。</li></ul><a href="https://www.diningcode.com/profile.php?rid=5CuFRvNqxdnF" target="_blank" rel="noopener noreferrer">菜單與用餐評價參考 ↗</a></div></article>
-<div class="restaurant-list"><article><span>西部用餐備選</span><h3>Suudong 協財店</h3><p>수우동 협재점 · 烏龍麵、炸豬排。1/9 以採果前就近吃飯為主，這間只留作時間與動線合適時的備選，不特地排隊。</p><a href="https://map.naver.com/p/search/%EC%88%98%EC%9A%B0%EB%8F%99%20%ED%98%91%EC%9E%AC%EC%A0%90" target="_blank" rel="noopener noreferrer">地圖搜尋 ↗</a></article><article><span>01.10 · 午餐｜指定想吃</span><h3>中門帶魚 Norut</h3><p>중문갈치 노릇 · 辣燉帶魚搭鍋飯，或選烤帶魚套餐。四人一起分享，吃完接山茶花之丘。地址：1100로49번길 28-19；套餐與價格待確認。</p><a href="https://map.naver.com/p/search/%EC%A4%91%EB%AC%B8%EA%B0%88%EC%B9%98%20%EB%85%B8%EB%A6%87" target="_blank" rel="noopener noreferrer">地圖搜尋 ↗</a></article><article><span>01.12 · 午餐</span><h3>Ojo Haenyeo House</h3><p>오조해녀의집 · 城山一帶的鮑魚粥與海鮮，午餐以熱食為主，再沿北岸繼續走。</p><a href="https://map.naver.com/p/search/%EC%98%A4%EC%A1%B0%ED%95%B4%EB%85%80%EC%9D%98%EC%A7%91" target="_blank" rel="noopener noreferrer">地圖搜尋 ↗</a></article><article><span>01.12 · 晚餐</span><h3>熟成到／Doldam</h3><p>숙성도 濟州本店／老衡店吃熟成黑豬肉；備選 돌담흑돼지 延洞店。四人一起分享烤肉。</p><a href="https://doldamblackpork.com/en/" target="_blank" rel="noopener noreferrer">Doldam 官網 ↗</a></article></div><p class="food-footnote">一般餐廳價格與候位狀況以當日為準。1/11 只安排賞雪，下山午餐後回住宿休息；偶來市場不列當天固定行程。餐廳選擇參考 Visit Jeju、店家官網及公開用餐評價；中門帶魚 Norut 為同行者指定餐廳，店址與菜色已另核對。</p></section>
-<section class="stays-section" id="stays"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">STAY A LITTLE LONGER</p><h2>換三個地方，把日子住漂亮。</h2></div><p>四人同行，以兩間獨立臥室為主。<br>以下為候選，尚未確認空房與指定日期價格。</p></div><div class="stay-grid">
-<article class="stay"><div class="stay-image"><img src="https://images.stayfolio.com/system/pictures/images/000/598/785/original/1591b5e91f7e3be731a755a077a242b1859d2fc6.jpg?d=1920&amp;q=75" alt="Stay Easel 住宿空間" loading="eager" decoding="async" referrerpolicy="no-referrer"><span>01 / WEST</span><a class="photo-fallback" href="https://www.stayfolio.com/en/findstay/stay-easel/gallery" target="_blank" rel="noopener noreferrer"><strong>查看住宿實景相簿 ↗</strong><small>若照片未載入，點此開啟官方相簿</small></a></div><div class="stay-date">01.09 — 01.10 · 1 晚</div><h3>Stay Easel</h3><p class="location">愛月 · 木質、庭院與大窗景</p><p>把旅程的第一晚留給安靜村落。兩間臥室、兩間衛浴，適合一起吃早餐，再往南出發。</p><a href="https://www.stayfolio.com/en/findstay/stay-easel" target="_blank" rel="noopener noreferrer">看看這間住宿 ↗</a></article>
-<article class="stay"><div class="stay-image"><img src="https://images.stayfolio.com/system/pictures/images/000/207/512/original/a30493bdb8d9bb9bc275c988de83761bc03b2e7c.jpg?d=1920&amp;q=75" alt="Stay Sunmyung 住宿空間" loading="eager" decoding="async" referrerpolicy="no-referrer"><span>02 / SOUTH</span><a class="photo-fallback" href="https://www.stayfolio.com/en/findstay/stay-sunmyung/gallery" target="_blank" rel="noopener noreferrer"><strong>查看住宿實景相簿 ↗</strong><small>若照片未載入，點此開啟官方相簿</small></a></div><div class="stay-date">01.10 — 01.12 · 2 晚</div><h3>Stay Sunmyung</h3><p class="location">南元 · 村落、茶空間與庭院</p><p>兩間臥室、兩間衛浴。在南部連住兩晚，留一天逛市場、喝咖啡，也方便接續往東岸走。</p><a href="https://www.stayfolio.com/en/findstay/stay-sunmyung" target="_blank" rel="noopener noreferrer">看看這間住宿 ↗</a></article>
-<article class="stay"><div class="stay-image"><img src="https://images.stayfolio.com/system/pictures/images/000/580/313/original/5860afce980775a20a56072ee1bf9ac3bb7fa6a6.jpg?d=1920&amp;q=75" alt="MARWE 住宿空間" loading="eager" decoding="async" referrerpolicy="no-referrer"><span>03 / NORTH</span><a class="photo-fallback" href="https://www.stayfolio.com/en/findstay/marwe/gallery" target="_blank" rel="noopener noreferrer"><strong>查看住宿實景相簿 ↗</strong><small>若照片未載入，點此開啟官方相簿</small></a></div><div class="stay-date">01.12 — 01.15 · 3 晚</div><h3>MARWE</h3><p class="location">龍潭 · 石牆、海邊與城市生活</p><p>最後三晚安頓在機場與市區附近。四人使用 MAR 棟，含兩間獨立臥室；訂前確認開放範圍。</p><a href="https://www.stayfolio.com/en/findstay/marwe" target="_blank" rel="noopener noreferrer">看看這間住宿 ↗</a></article>
+<article class="birthday"><div><p class="eyebrow">JAN 14 · BIRTHDAY DINNER</p><h3>生日晚餐 <span>還在討論中</span></h3><p class="birthday-lead">預算每人 NT$1,500 左右，目前有三間候選。</p><ul class="cands"><li><a href="https://map.naver.com/p/search/%ED%82%A4%EC%B9%9C%EA%B8%80%EB%9D%BC" target="_blank" rel="noopener noreferrer">Kitchen Gla 키친글라 ↗</a><br>延洞義式餐酒館，牛排、義大利麵、燉飯適合四人分著吃。第三方菜單參考：2 人牛排＋麵組合 ₩76,000。</li><li><a href="https://map.naver.com/p/search/%EA%B7%B8%EB%9E%9C%EB%93%9C%ED%95%98%EC%96%8F%ED%8A%B8%EC%A0%9C%EC%A3%BC%20%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC%ED%95%98%EC%9A%B0%EC%8A%A4" target="_blank" rel="noopener noreferrer">Grand Hyatt 濟州 38F The Steak House ↗</a><br>濟州夢之塔頂樓，看得到整個市區夜景。2023 年三道式晚餐約 9 萬多韓元，超出預算；同層的 Pocha 比較便宜。</li><li><a href="https://www.catchtable.net/shop/mat_jeju" target="_blank" rel="noopener noreferrer">MAT ↗</a><br>老衡 11 街 18 號 2 樓，18:00–22:00。燈光低的葡萄酒小酒館，CatchTable 介紹適合慶生，價位沒查到。</li></ul></div><div class="birthday-budget"><p class="eyebrow">OUR DINNER BUDGET</p><strong>NT$1,500<span> / 人左右</span></strong><p>每人約 ₩61,500，四人整餐約 ₩200,000–240,000，另留蛋糕預算。</p><ul><li>暫以 1 TWD ≈ 41 KRW 換算，以上是規劃估算，不是店家報價。</li><li>決定後再訂四人桌，確認 1/14 營業、最新價格、能不能自帶蛋糕和切糕費。</li></ul><a href="https://www.diningcode.com/profile.php?rid=5CuFRvNqxdnF" target="_blank" rel="noopener noreferrer">Kitchen Gla 菜單與用餐評價參考 ↗</a></div></article>
+<div class="restaurant-list"><article><span>西部用餐備選</span><h3>Suudong 協財店</h3><p>수우동 협재점 · 烏龍麵、炸豬排。1/9 以採果前就近吃飯為主，這間只留作時間與動線合適時的備選，不特地排隊。</p><a href="https://map.naver.com/p/search/%EC%88%98%EC%9A%B0%EB%8F%99%20%ED%98%91%EC%9E%AC%EC%A0%90" target="_blank" rel="noopener noreferrer">地圖搜尋 ↗</a></article><article><span>01.10 · 午餐</span><h3>中門帶魚 Norut</h3><p>중문갈치 노릇 · 辣燉帶魚搭鍋飯，或選烤帶魚套餐。四人一起分享，吃完接山茶花之丘。地址：1100로49번길 28-19；套餐與價格待確認。</p><a href="https://map.naver.com/p/search/%EC%A4%91%EB%AC%B8%EA%B0%88%EC%B9%98%20%EB%85%B8%EB%A6%87" target="_blank" rel="noopener noreferrer">地圖搜尋 ↗</a></article><article><span>01.12 · 午餐</span><h3>Audrey Gimbap</h3><p>오드리김밥 · 城山日出峰附近的飯捲店，點辣炒年糕和黑豬肉紫菜包飯。週日公休，電話 064-783-7879。</p><a href="https://map.naver.com/p/search/%EC%98%A4%EB%93%9C%EB%A6%AC%EA%B9%80%EB%B0%A5" target="_blank" rel="noopener noreferrer">地圖搜尋 ↗</a></article><article><span>01.11 · 晚餐</span><h3>熟成到／Doldam</h3><p>숙성도 濟州本店／老衡店吃熟成黑豬肉；備選 돌담흑돼지 延洞店。四人一起分享烤肉。</p><a href="https://doldamblackpork.com/en/" target="_blank" rel="noopener noreferrer">Doldam 官網 ↗</a></article></div><p class="food-footnote">一般餐廳價格與候位狀況以當日為準。餐廳選擇參考 Visit Jeju、店家官網及公開用餐評價；中門帶魚 Norut 為同行者指定餐廳。</p></section>
+<section class="stays-section" id="stays"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">STAY A LITTLE LONGER</p><h2>每一晚住哪裡。</h2></div><p>四人同行，以兩間獨立臥室為主。<br>以下都是候選，還沒確認空房和指定日期的價格。</p></div><div class="stay-grid four">
+<article class="stay"><div class="stay-image"><img src="https://images.stayfolio.com/system/pictures/images/000/598/785/original/1591b5e91f7e3be731a755a077a242b1859d2fc6.jpg?d=1920&amp;q=75" alt="Stay Easel 住宿空間" loading="eager" decoding="async" referrerpolicy="no-referrer"><span>01 / WEST</span><a class="photo-fallback" href="https://www.stayfolio.com/en/findstay/stay-easel/gallery" target="_blank" rel="noopener noreferrer"><strong>查看住宿實景相簿 ↗</strong><small>若照片未載入，點此開啟官方相簿</small></a></div><div class="stay-date">01.09 · 1 晚</div><h3>協才／翰林一帶</h3><p class="location">手冊建議區域</p><ul class="cands"><li><a href="https://www.airbnb.com/rooms/36496309" target="_blank" rel="noopener noreferrer">Jeju Hyeopjae Beach Marie ↗</a><br>協才・Airbnb。兩房，走路約 10 分鐘到協才海邊，評分 4.92（848 則）。</li><li><a href="https://www.stayfolio.com/en/findstay/stay-easel" target="_blank" rel="noopener noreferrer">Stay Easel ↗</a><br>愛月・Stayfolio。兩房兩衛，木質空間和庭院。</li><li><a href="https://www.airbnb.com/rooms/53868195" target="_blank" rel="noopener noreferrer">Jeju Salle ↗</a><br>愛月・Airbnb。兩房各一張 Queen 床，後院按摩浴缸，評分 4.96（164 則）。</li></ul></article>
+<article class="stay"><div class="stay-image"><img src="https://images.stayfolio.com/system/pictures/images/000/207/512/original/a30493bdb8d9bb9bc275c988de83761bc03b2e7c.jpg?d=1920&amp;q=75" alt="Stay Sunmyung 住宿空間" loading="eager" decoding="async" referrerpolicy="no-referrer"><span>02 / SOUTH</span><a class="photo-fallback" href="https://www.stayfolio.com/en/findstay/stay-sunmyung/gallery" target="_blank" rel="noopener noreferrer"><strong>查看住宿實景相簿 ↗</strong><small>若照片未載入，點此開啟官方相簿</small></a></div><div class="stay-date">01.10 · 1 晚</div><h3>西歸浦一帶</h3><p class="location">三間都在西歸浦市區東邊的南元／爲美</p><ul class="cands"><li><a href="https://www.stayfolio.com/en/findstay/stay-sunmyung" target="_blank" rel="noopener noreferrer">Stay Sunmyung ↗</a><br>南元・Stayfolio。兩房兩衛，有茶空間和庭院。</li><li><a href="https://www.airbnb.com/rooms/22647157" target="_blank" rel="noopener noreferrer">달뜬제주 Dalteun Jeju ↗</a><br>南元・Airbnb。橘子園裡的小獨棟，兩房，評分 4.94（452 則）。</li><li><a href="https://www.airbnb.com/rooms/48172545" target="_blank" rel="noopener noreferrer">Bori House ↗</a><br>爲美・Airbnb。北歐風民宿，被橘子園和杉木圍著，兩房，評分 4.77（43 則）。</li></ul></article>
+<article class="stay"><div class="stay-image"><img src="https://images.stayfolio.com/system/pictures/images/000/580/313/original/5860afce980775a20a56072ee1bf9ac3bb7fa6a6.jpg?d=1920&amp;q=75" alt="MARWE 住宿空間" loading="eager" decoding="async" referrerpolicy="no-referrer"><span>03 / CITY</span><a class="photo-fallback" href="https://www.stayfolio.com/en/findstay/marwe/gallery" target="_blank" rel="noopener noreferrer"><strong>查看住宿實景相簿 ↗</strong><small>若照片未載入，點此開啟官方相簿</small></a></div><div class="stay-date">01.11、01.13–01.14 · 3 晚</div><h3>濟州市</h3><p class="location">1/13、1/14 建議同一間；1/12 也回市區的話，1/11–1/14 可以連住不搬</p><ul class="cands"><li><a href="https://www.stayfolio.com/en/findstay/marwe" target="_blank" rel="noopener noreferrer">MARWE ↗</a><br>龍潭・Stayfolio。石牆、靠海，四人用 MAR 棟兩間臥室，訂前確認開放範圍。</li><li><a href="https://www.airbnb.com/rooms/1719532930852195073" target="_blank" rel="noopener noreferrer">新濟州 2 房公寓 ↗</a><br>老衡洞・Airbnb。離本思醫院和免稅店近，有洗衣機和烘衣機，評分 4.69（13 則）。</li></ul></article>
+<article class="stay"><div class="stay-image noimg"><div class="photo-fallback"><strong>城山日出峰一帶</strong><small>住宿還沒決定</small></div><span>04 / EAST</span></div><div class="stay-date">01.12 · 1 晚（待定）</div><h3>城山／東部，或回濟州市</h3><p class="location">住東部隔天要搬回市區；回市區就少搬一次</p><ul class="cands"><li><a href="https://www.airbnb.com/rooms/13362813" target="_blank" rel="noopener noreferrer">Jeju Seongsan The Some ↗</a><br>城山・Airbnb。兩房兩衛，有庭院和烤肉區，評分 4.8（41 則）。床只列一張 Queen，其他要問是不是地鋪。</li><li><a href="https://www.airbnb.com/rooms/14764260" target="_blank" rel="noopener noreferrer">Sunburned Room ↗</a><br>城山・Airbnb。兩房一衛複層，窗外就是日出峰，評分 4.87（115 則）。床只列一張雙人床，訂前問清楚。</li></ul></article>
 </div></div></section>
-<section class="wrap notes" id="notes"><div class="section-heading"><div><p class="eyebrow">BEFORE WE GO</p><h2>把重要的小事，先記下來。</h2></div></div><div class="note-grid"><article><span class="note-no">01</span><h3>早到，早回</h3><p>去程 1/9 虎航 06:30 → 09:20；回程 1/15 虎航 11:45 → 12:55。航班依同行者提供資訊，仍以機票為準。</p></article><article><span class="note-no">02</span><h3>行李也要有位置</h3><p>四人若各帶大行李箱，先看 Carnival 類車款的行李空間。1/15 建議 08:15–08:30 還車，約 09:00 抵達航廈。</p></article><article><span class="note-no">03</span><h3>冬天保留一點彈性</h3><p>花況、採果與海岸停留依天氣調整；店家公休、候位及活動需出發前再確認。遇風雪，縮短戶外行程並確認道路狀況。</p></article><article><span class="note-no">04</span><h3>先把三件事訂好</h3><p>確認三段住宿的四人總價與兩房配置、預約採橘子，再確認 1/13 預約與隔天是否需保留時間。1/11 賞雪與 1/12 東岸移動較多，均保留時間彈性。</p></article></div>
+<section class="wrap notes" id="notes"><div class="section-heading"><div><p class="eyebrow">BEFORE WE GO</p><h2>把重要的小事，先記下來。</h2></div></div><div class="note-grid"><article><span class="note-no">01</span><h3>兩組航班</h3><p><strong>Vik &amp; Mike</strong><br>去程 06:30 → 09:20<br>回程 11:45 → 12:55</p><p><strong>思琪 &amp; 玉米</strong><br>去程 10:15 抵達<br>回程 20:20 起飛</p></article><article><span class="note-no">02</span><h3>租車：天使租車</h3><p>取車：1/9 機場接駁。<br>還車：1/15 15:30。<br>預約編號／電話：待填。</p><p>只有一輛車，1/13 和 1/15 分組時先排好誰開車。</p></article><article><span class="note-no">03</span><h3>冬天保留一點彈性</h3><p>花況、採果與海岸停留依天氣調整；店家公休、候位及活動需出發前再確認。遇風雪，縮短戶外行程並查道路狀況。</p></article><article><span class="note-no">04</span><h3>先把這些訂好</h3><p>每晚住宿、橘子園、London Bagel Museum 與熱門餐廳、1/13 醫美、1/14 生日餐廳。</p></article></div>
+<div class="prep-grid"><div><h3>出發前待辦</h3><ul class="checklist"><li>確認護照效期（建議 6 個月以上）</li><li>查詢最新韓國入境規定與電子申報</li><li>攜帶駕照與國際駕照（依租車公司規定）</li><li>確認天使租車預約與取車接駁</li><li>準備雪鏈，或確認租車含雪胎</li><li>下載 Naver Map／Kakao Map 離線地圖</li><li>購買網卡或 eSIM</li><li>購買旅遊平安險與不便險</li><li>換韓元現金、帶可海外刷卡的卡片</li><li>預約 London Bagel Museum 與熱門餐廳</li><li>預約醫美行程（1/13）</li><li>暖暖包、防滑鞋、手套、帽子</li><li>行動電源與轉接頭（韓國 220V 圓頭插頭）</li><li>整理購物清單，留意退稅規定</li></ul></div><div><h3>韓文小抄</h3><div class="phrase"><span>這個多少錢？</span><span>이거 얼마예요?</span></div><div class="phrase"><span>請給我袋子</span><span>봉투 주세요</span></div><div class="phrase"><span>可以退稅嗎？</span><span>택스 리펀 되나요?</span></div><div class="phrase"><span>請幫我加滿</span><span>가득 넣어 주세요</span></div><div class="phrase"><span>請給我水</span><span>물 주세요</span></div><div class="phrase"><span>謝謝</span><span>감사합니다</span></div><div class="phrase"><span>不要香菜／不要太辣</span><span>고수 빼 주세요 / 덜 맵게 해 주세요</span></div><h3 class="sub">緊急電話</h3><div class="phrase"><span>報警</span><span>112</span></div><div class="phrase"><span>火警與救護</span><span>119</span></div><div class="phrase"><span>韓國旅遊諮詢（可中文）</span><span>1330</span></div><div class="phrase"><span>外交部旅外國人緊急服務（國際撥打）</span><span>+886-800-085-095</span></div><p class="emer">外交部專線出發前請再確認一次。</p><h3 class="sub">開車提醒</h3><p class="emer">Google 地圖在韓國導航功能有限，用 Naver Map 或 Kakao Map。海邊和山區天氣變化大，雪天減速並保持車距。</p></div></div>
 <details class="sources"><summary>景點資料與旅程說明</summary><p>本頁是旅行規劃草案，非訂房或預約確認。車程為區域規劃估算；地圖連線為旅行方向，非道路導航。年份先按 2027 年安排。</p><div><a href="https://jejutw.vandsclinics.com/web/sub/location" target="_blank" rel="noopener noreferrer">本思醫院交通資訊</a><a href="https://www.visitjeju.net/" target="_blank" rel="noopener noreferrer">Visit Jeju</a><a href="https://visitjeju.net/en/detail/view?contentsid=CNTS_300000000013405" target="_blank" rel="noopener noreferrer">愛月橘子園介紹</a><a href="https://jjpolice.go.kr/jjpolice/notice/traffic.htm" target="_blank" rel="noopener noreferrer">濟州道路即時管制</a><a href="https://m.visitjeju.net/en/detail/view?contentsid=CNTS_000000000021772" target="_blank" rel="noopener noreferrer">1100 高地介紹</a><a href="https://english.visitkorea.or.kr/" target="_blank" rel="noopener noreferrer">韓國觀光公社</a><a href="https://www.stayfolio.com/en" target="_blank" rel="noopener noreferrer">STAYFOLIO</a><a href="https://doldamblackpork.com/en/" target="_blank" rel="noopener noreferrer">Doldam</a><a href="https://www.diningcode.com/profile.php?rid=QfAUkgtmDvuN" target="_blank" rel="noopener noreferrer">中門帶魚 Norut 菜單參考</a><a href="https://github.com/southkorea/southkorea-maps" target="_blank" rel="noopener noreferrer">底圖：KOSTAT / southkorea-maps</a></div><p>景點資料整理：2026/10。住宿照片來自 STAYFOLIO 介紹頁；實際房型與設施以業者說明為準。</p></details></section>
 </main><footer class="wrap"><a class="brand" href="#home"><span class="orange-dot"></span> JEJU, SLOWLY.</a><span>把冬天留在濟州，把回憶帶回家。</span><span>JANUARY 2027</span></footer><div id="toast" role="status" aria-live="polite"></div><script>const days=[
   {
     "date": "01.09",
     "week": "SAT",
-    "name": "橘子園，慢慢進入假期",
-    "area": "愛月・翰林",
-    "route": "機場 → 愛月簡單午餐 → 西部橘子園 → UMU 外帶 → 愛月住宿",
-    "stay": "愛月／翰林 · 第 1 個落腳處",
-    "desc": "第一天只安排採橘子這一項體驗，布丁順路買，海邊散步留作選配。",
+    "name": "抵達濟州，西部海岸與夕陽",
+    "area": "愛月・翰林・協才",
+    "route": "機場 → 愛月 → 翰林 → 協才／金陵（一路往西，不回頭）",
+    "stay": "協才／翰林一帶 · 第 1 晚",
+    "desc": "兩組人前後抵達，會合後一起取車往西。",
+    "flag": "行程偏多：橘子園、UMU、翰林公園、海邊夕陽都擠在同一個下午，可以討論主要去哪裡。",
     "stops": [
       [
         "09:20",
-        "抵達濟州、接駁取車",
-        "預留入境與取車時間，約 11:00–11:30 出發。"
+        "抵達濟州",
+        "06:30 起飛、09:20 抵達，在機場等另一組。",
+        "",
+        "Vik & Mike"
+      ],
+      [
+        "10:15",
+        "抵達濟州",
+        "會合後搭接駁到天使租車取車。",
+        "",
+        "思琪 & 玉米"
       ],
       [
         "12:00",
-        "愛月簡單午餐",
-        "選路線附近不用久候的店，不排熱門餐廳。"
+        "午餐",
+        "沿路找，愛月一帶有咖啡廳和海鮮店。"
       ],
       [
         "13:00",
         "愛月 귤빛정원 柑橘體驗農場",
-        "地址：애월원당길 101。採果抓約 60–90 分鐘；先確認 1/9 果況、四人預約與延誤改時段方式。",
+        "採柑橘、拍照，14:30 前結束。",
         "귤빛정원감귤체험농장"
       ],
       [
         "14:30",
-        "UMU 翰林店外帶",
-        "地址：한림로 542-1。買完盡快吃；今天不另外排咖啡廳。",
+        "UMU 翰林店",
+        "只能外帶。電話 +82 10-6705-0064。",
         "우무 한림"
       ],
       [
-        "16:00",
-        "入住民宿，住宿附近晚餐",
-        "精神好才在沿途海邊短停，協財／金陵不列必到景點。"
+        "15:00",
+        "翰林公園",
+        "16:30 停止售票，成人約 ₩15,000。",
+        "한림공원"
+      ],
+      [
+        "16:30",
+        "協才／金陵海邊",
+        "看天氣和日落決定停哪個海岸，日落約 17:50。",
+        "협재해수욕장"
+      ],
+      [
+        "18:00",
+        "晚餐＋入住",
+        "住協才附近。"
       ]
     ],
-    "note": "採橘子移到 1/9 西部農場，與花園、賞雪各分一天。早班機當天保留休息；若航班延誤，先與農場協調，不壓縮入境與開車時間。果況與費用尚未確認。"
+    "note": "今晚住協才／翰林一帶，明天往南走。"
   },
   {
     "date": "01.10",
     "week": "SUN",
-    "name": "把午後留給山茶花",
-    "area": "西南部 → 南元",
-    "route": "愛月 → 新昌海岸 → 中門帶魚 Norut → 山茶花之丘 → 南元",
-    "stay": "西歸浦／南元 · 連住 2 晚",
-    "desc": "今天的主要景點只有山茶花之丘，午餐吃你指定的帶魚店，採橘子已安排在前一天。",
+    "name": "西部海岸，到山茶花之丘",
+    "area": "新昌・山房山・中文・西歸浦",
+    "route": "協才 → 新昌 → 山房山（選配）→ 中門帶魚 Norut → 山茶花之丘 → 西歸浦",
+    "stay": "西歸浦 · 第 2 晚",
+    "desc": "新昌往南都是順路，午餐吃中門帶魚 Norut。",
     "stops": [
       [
-        "09:30",
-        "退房，沿西岸向南",
-        "吃完早餐再出發。"
+        "09:00",
+        "退房、早餐",
+        ""
       ],
       [
-        "10:30",
-        "新昌海岸短停（可省略）",
-        "想睡晚一點，就直接往中文吃午餐。",
+        "10:00",
+        "新昌風車海岸公路",
+        "短停拍照看海。備案：晚霞海岸公路／新桃浦口。",
         "신창풍차해안도로"
       ],
       [
+        "11:00",
+        "（選配）山房山／龍頭海岸",
+        "剛好在往中文的路上，不想去就直接去吃午餐。",
+        "산방산"
+      ],
+      [
         "12:00",
-        "中門帶魚 Norut｜중문갈치 노릇",
-        "你指定的帶魚店。四人可選帶魚套餐，辣燉帶魚搭鍋飯為首選；不吃辣可選烤帶魚。地址：서귀포시 1100로49번길 28-19。最新套餐、辣度與價格待確認。",
+        "午餐：中門帶魚 Norut｜중문갈치 노릇",
+        "辣燉帶魚搭鍋飯，不吃辣可選烤帶魚。地址：서귀포시 1100로49번길 28-19。",
         "중문갈치 노릇 1100로49번길 28-19"
       ],
       [
         "14:00",
         "山茶花之丘 Camellia Hill",
-        "預留約 1.5–2 小時，今天不再接採果。地址：병악로 166。",
+        "可以待到 17:00，18:00 關園。",
         "카멜리아힐"
       ],
       [
-        "17:00",
-        "南元入住、簡單晚餐",
-        "若午餐吃得豐盛，晚餐在住宿附近簡單吃。"
+        "17:30",
+        "西歸浦入住",
+        ""
+      ],
+      [
+        "18:00",
+        "晚餐",
+        "이드레국수 黑豬肉湯麵，或偶來市場。",
+        "이드레국수"
       ]
     ],
-    "note": "午餐為你指定的中門帶魚 Norut，吃完再去山茶花之丘。採橘子改到 1/9 愛月農場；新昌海岸是選配。店家營業、候位與套餐需出發前再確認。"
+    "note": "Norut 在中文一帶，離山茶花之丘大約 20 分鐘車程。新昌開到 Norut 約 45 分鐘，山房山就在中間。"
   },
   {
     "date": "01.11",
     "week": "MON",
-    "name": "今天，只追一場雪",
-    "area": "漢拿山 1100 高地",
-    "route": "南元住宿 → 中文／1100道路南側 → 1100高地休息站 → 原路下山 → 午餐 → 住宿",
-    "stay": "西歸浦／南元 · 第 2 晚",
-    "desc": "整天只留一個主要行程：自駕到漢拿山 1100 高地賞雪。下山就吃飯、回去休息，不再趕第二個預約。",
+    "name": "漢拏山雪景，回濟州市",
+    "area": "1100 高地・御里牧・濟州市",
+    "route": "西歸浦 → 1100 高地 → 御里牧 → 濟州市",
+    "stay": "濟州市 · 第 3 晚",
+    "desc": "從南邊上山看雪，下山直接開到濟州市入住。",
+    "flag": "行程偏多：雪地健行、市區咖啡廳加上搬住宿，可以討論主要去哪裡。",
     "stops": [
       [
-        "08:30",
-        "查路況，再自駕上山",
-        "確認 1100 道路（1139）即時管制，再由中文一帶沿南側上山。單程預留約 1–1.5 小時，依實際路況調整。"
+        "08:00",
+        "早餐，查道路管制",
+        "確認 1100 道路、積雪與結冰情況。"
       ],
       [
-        "10:00",
-        "1100 高地休息站賞雪",
-        "導航：1100고지휴게소；地址：서귀포시 1100로 1555。合法停車後拍照、短程散步，抓約 45–90 分鐘；依雪況與步道開放調整。",
+        "09:00",
+        "漢拏山 1100 高地",
+        "白鹿雕像、最高的 GS25。",
         "1100고지휴게소"
       ],
       [
-        "11:30",
-        "原路下山",
-        "不接採果、不排小店。停車或交通延誤也不必趕行程。"
+        "10:30",
+        "御里牧入口／步道",
+        "雪地健行，或玩雪堆雪人。",
+        "어리목"
       ],
       [
-        "12:30",
-        "下山後午餐",
-        "在西歸浦／南元方向選一間順路熱食店，時間跟著路況調整。"
+        "12:00",
+        "午餐",
+        "沿途找。"
       ],
       [
         "14:00",
-        "回民宿休息",
-        "下午留白；晚餐在住宿附近吃。"
+        "濟州市區咖啡廳或室內景點",
+        ""
+      ],
+      [
+        "16:00",
+        "濟州市入住",
+        ""
+      ],
+      [
+        "18:00",
+        "晚餐：烤肉",
+        "可以吃熟成黑豬肉：숙성도 濟州本店／老衡店，備選 Doldam 延洞店。",
+        "숙성도 제주본점"
       ]
     ],
-    "note": "自駕賞雪採道路開放時才出發；有雪鏈管制需符合車種及裝備規定，租車前確認雪鏈與租約條件。若封路、結冰嚴重或能見度差，就取消上山，不另繞山路；當天改市區用餐與休息。1/11 是否有積雪目前無法保證。"
+    "note": "出發前一晚和當天早上都要查 1100 道路管制，車上備雪鏈。結冰、停車困難或天候差就取消，改市區咖啡廳或室內景點。"
   },
   {
     "date": "01.12",
     "week": "TUE",
-    "name": "繞過東岸，回到城市",
-    "area": "城山・細花・濟州市",
-    "route": "南元 → 城山 → 細花 → 東福 Object → 濟州市",
-    "stay": "濟州市 · 連住 3 晚",
-    "desc": "今天完成環島，晚上用熟成黑豬肉替旅程前半段乾杯。",
+    "name": "東部海岸，城山",
+    "area": "榧子林・月汀里・細花・城山・涉地可支",
+    "route": "濟州市 → 榧子林 → 月汀里 → 細花 → 城山 → 涉地可支",
+    "stay": "城山／東部，或回濟州市 · 第 4 晚（待定）",
+    "desc": "先去內陸的榧子林，再沿海岸一路往東南。",
+    "flag": "行程偏多：一天排了 7 個點，可以討論主要去哪裡。",
     "stops": [
       [
+        "08:00",
+        "出門",
+        ""
+      ],
+      [
         "09:00",
-        "退房，沿東岸出發",
-        "今天估計累計開車約 3–3.5 小時，提早出門比較從容。"
+        "榧子林（비자림）",
+        "林間散步，₩3,000／人。",
+        "비자림"
       ],
       [
         "10:30",
-        "城山海岸、日出峰山腳",
-        "以海岸與山腳散步為主，這版不安排登頂。",
-        "성산일출봉"
+        "月汀里海邊",
+        "看海、拍彩虹椅。",
+        "월정리해수욕장"
       ],
       [
-        "12:00",
-        "Ojo Haenyeo House 午餐",
-        "오조해녀의집，推薦鮑魚粥；海鮮加點依當天供應。",
-        "오조해녀의집"
-      ],
-      [
-        "13:30",
+        "11:30",
         "細花海邊",
-        "看海與村落散步，冬季市集不列為固定行程。",
+        "",
         "세화해수욕장"
       ],
       [
+        "12:30",
+        "午餐：Audrey Gimbap",
+        "오드리김밥，城山日出峰附近。辣炒年糕＋黑豬肉紫菜包飯。營業 09:00–15:00、17:00–19:00，週日公休。電話 064-783-7879。",
+        "오드리김밥"
+      ],
+      [
+        "13:30",
+        "城山日出峰",
+        "",
+        "성산일출봉"
+      ],
+      [
         "15:00",
-        "Object 濟州店",
-        "逛設計小物與文具，出發前確認最新店址與營業資訊。",
-        "오브젝트 제주점"
+        "Fritz Coffee Company 城山店",
+        "看海景和日出峰。營業 08:00–19:00。",
+        "프릳츠 성산점"
       ],
       [
-        "17:00",
-        "濟州市入住",
-        "接下來三晚不再換住宿。"
+        "16:30",
+        "涉地可支",
+        "看夕陽，日落約 17:50。",
+        "섭지코지"
       ],
       [
-        "18:30",
-        "熟成黑豬肉晚餐",
-        "首選 숙성도 濟州本店／老衡店；備選 Doldam 延洞店。預留候位時間。",
-        "숙성도 제주본점"
+        "18:00",
+        "入住＋晚餐",
+        ""
       ]
     ],
-    "note": "若前面停留較久，刪掉細花或 Object 其中一站，避免趕路。餐廳需確認四人候位或預約方式。"
+    "note": "榧子林在內陸，先去再往海邊走就不用回頭。榧子林和思連岳林道是不同地點，並不相連。"
   },
   {
     "date": "01.13",
     "week": "WED",
-    "name": "預約保留日",
-    "area": "新濟州・老衡",
-    "route": "龍潭住宿 ↔ 本思醫院 濟州國際店",
-    "stay": "濟州市 · 第 2 晚",
-    "desc": "今天把整天留白，不搬行李，也不追景點。",
+    "name": "兵分兩路",
+    "area": "濟州市・新濟州",
+    "route": "Vik & Mike：本思醫院 ｜ 思琪 & 玉米：London Bagel → Object → 樂天超市、羽球用品",
+    "stay": "濟州市 · 第 5 晚",
+    "desc": "今天分兩組各自行動，晚餐再會合。",
     "stops": [
       [
         "上午",
-        "早餐，前往本思醫院 濟州國際店",
-        "官網地址：濟州市老衡路 201 號；韓文地址：제주시 노형로 201。實際預約時段尚未確認。",
-        "밴스글로벌제주의원"
+        "本思醫院 濟州國際店",
+        "濟州市老衡路 201 號（제주시 노형로 201），電話 064-803-0024。官網標示平日 10:00–20:00，實際預約時段待確認。",
+        "밴스글로벌제주의원",
+        "Vik & Mike"
       ],
       [
-        "全天",
-        "保留預約與接送時間",
-        "不排其他固定行程，交通與結束時間依診所通知安排。"
+        "下午",
+        "醫美後休息",
+        "診所走路約 3 分鐘到新羅免稅店，可以順便逛。",
+        "",
+        "Vik & Mike"
       ],
       [
-        "傍晚",
-        "簡單用餐，回住宿休息",
-        "官網標示平日 10:00–20:00；此為門診時間，不代表個人預約已成立。"
+        "09:30",
+        "London Bagel Museum 濟州店",
+        "網紅店，建議提早到排隊。",
+        "런던베이글뮤지엄 제주",
+        "思琪 & 玉米"
+      ],
+      [
+        "11:00",
+        "Object 濟州店",
+        "",
+        "오브젝트 제주점",
+        "思琪 & 玉米"
+      ],
+      [
+        "12:00",
+        "濟州市區午餐",
+        "",
+        "",
+        "思琪 & 玉米"
+      ],
+      [
+        "13:00",
+        "樂天超市＋Yonex、Nice Minton 羽球用品",
+        "",
+        "",
+        "思琪 & 玉米"
+      ],
+      [
+        "18:00",
+        "會合，晚餐＋休息",
+        "",
+        "",
+        "四人"
       ]
     ],
-    "note": "診所官網指示距新羅免稅店步行約 3 分鐘。龍潭住宿仍可作市區基地；若以走路回房為優先，最後三晚可改找老衡／延洞兩間雙人房。"
+    "note": "只有一輛車。車留給思琪 & 玉米，Vik & Mike 搭計程車往返診所比較單純。如果 1/12 住東部，早上先把 Vik & Mike 送到診所再出發。"
   },
   {
     "date": "01.14",
     "week": "THU",
-    "name": "今天，為朋友慶生",
-    "area": "濟州市・延洞",
-    "route": "東門市場／七星街 → 休息 → 免稅店 → Kitchen Gla",
-    "stay": "濟州市 · 最後 1 晚",
-    "desc": "把生日晚餐當作今天的主角，購物留一些刪減空間。",
+    "name": "市區採買，晚上慶生",
+    "area": "東門市場・七星購物街",
+    "route": "東門市場 → 七星購物街 → 生日晚餐",
+    "stay": "濟州市 · 第 6 晚",
+    "desc": "整趟旅程最輕鬆的一天。",
     "stops": [
       [
-        "10:30",
-        "東門市場＋七星購物街",
-        "先買橘子大福與伴手禮；中央地下街有精神再逛。",
-        "제주 동문시장 오복떡집"
+        "10:00",
+        "東門市場",
+        "橘子大福和伴手禮在這裡買。",
+        "제주동문시장"
       ],
       [
-        "12:30",
-        "簡單午餐，回住宿休息",
-        "中午留胃口，下午不用一路逛到底。"
+        "13:00",
+        "午餐",
+        ""
       ],
       [
-        "15:00",
-        "樂天免稅店（選配）",
-        "帶護照與離境航班資料；想多休息，這站可刪減。",
-        "롯데면세점 제주점"
+        "14:00",
+        "七星購物街",
+        "買棉被。",
+        "칠성로 쇼핑거리"
       ],
       [
         "18:00",
-        "生日晚餐：Kitchen Gla",
-        "키친글라，延洞義式餐酒館。四人餐費規劃 ₩200,000–240,000（以無酒精飲料搭配估算），非店家報價。",
-        "키친글라"
-      ],
-      [
-        "20:00",
-        "回住宿，生日甜點時間",
-        "先詢問餐廳能否自帶蛋糕及是否收費；不行就回住宿慶生。"
+        "生日晚餐",
+        "餐廳還在討論，候選放在下方「四個人的餐桌」。"
       ]
     ],
-    "note": "每人 NT$1,500 約 ₩61,500（暫以 1 TWD ≈ 41 KRW 估算）。四人桌、最新菜單、蛋糕規則與費用皆待確認；尚未訂位。"
+    "note": "東門市場周邊不好停車，停公營停車場再走過去。"
   },
   {
     "date": "01.15",
     "week": "FRI",
-    "name": "帶著橘子香回家",
-    "area": "濟州市 → 機場",
-    "route": "住宿 → 租車公司 → 濟州機場",
+    "name": "返程日，兩班飛機",
+    "area": "機場・思連岳林道・市區",
+    "route": "機場（Vik & Mike 下車）→ 思連岳林道 → 市區 → 還車 → 機場",
     "stay": "回家，期待下一次旅行",
-    "desc": "不再塞最後一個景點，悠閒吃完早餐，準備回家。",
+    "desc": "早上先送 Vik & Mike 到機場，思琪 & 玉米再玩半天。",
     "stops": [
       [
-        "07:00",
-        "早餐、最後整理",
-        "檢查護照、行李、充電器與免稅提貨資料。"
-      ],
-      [
-        "08:15",
-        "還車、搭接駁",
-        "建議約 08:15–08:30 還車，依租車公司位置調整。"
+        "08:00",
+        "出門",
+        ""
       ],
       [
         "09:00",
-        "抵達機場航廈",
-        "辦理報到、安檢與必要提貨，依航空公司要求提早。",
-        "제주국제공항"
+        "濟州機場下車",
+        "11:45 起飛，12:55 抵達台灣。",
+        "제주국제공항",
+        "Vik & Mike"
       ],
       [
-        "11:45",
-        "虎航返程起飛",
-        "提供的抵台時間為 12:55（台灣時間），以機票為準。"
+        "09:45",
+        "思連岳林道（사려니숲길）",
+        "免費，全長約 10 公里，走一小段就好。",
+        "사려니숲길",
+        "思琪 & 玉米"
+      ],
+      [
+        "11:30",
+        "Mayonnaise Restaurant",
+        "豬排＋辣奶油義大利麵，附近自己找停車格。",
+        "",
+        "思琪 & 玉米"
+      ],
+      [
+        "13:00",
+        "最後採買",
+        "",
+        "",
+        "思琪 & 玉米"
+      ],
+      [
+        "15:30",
+        "還車：天使租車",
+        "還車前加滿油，檢查車況。",
+        "",
+        "思琪 & 玉米"
+      ],
+      [
+        "17:00",
+        "抵達機場",
+        "20:20 起飛。",
+        "",
+        "思琪 & 玉米"
       ]
     ],
-    "note": "還車前的加油與接駁時間要另外計入；冬季如有天氣變化，留意航空公司通知。"
+    "note": "15:30 要還車，最後採買抓好時間。"
   }
 ];
 const tabs=document.getElementById('day-tabs'),panel=document.getElementById('day-panel');
-function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p><div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div><div class="timeline">${d.stops.map(s=>`<article class="stop"><time>${s[0]}</time><div><h4>${s[1]}</h4><p>${s[2]}</p>${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note">旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
+function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div><div class="timeline">${d.stops.map(s=>`<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note">旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
 days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-tab';b.id=`tab-${i}`;b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-controls','day-panel');b.innerHTML=`<span>DAY 0${i+1}</span><strong>${d.date}</strong><span>${d.week}</span>`;b.addEventListener('click',()=>render(i));b.addEventListener('keydown',e=>{let j=i;if(e.key==='ArrowRight')j=(i+1)%7;else if(e.key==='ArrowLeft')j=(i+6)%7;else if(e.key==='Home')j=0;else if(e.key==='End')j=6;else return;e.preventDefault();render(j,true)});tabs.append(b)});render(0);
 document.getElementById('share').addEventListener('click',async()=>{try{const data={title:document.title,text:'一起去濟州，逆時鐘慢慢玩。',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);toast('旅程連結已複製，可以傳給同行朋友了。')}}catch(e){if(e.name!=='AbortError')toast('請複製瀏覽器網址，分享這份旅程。')}});
 let timer;function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('visible'),3500)}
