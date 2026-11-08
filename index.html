@@ -13,6 +13,7 @@
 .day-flag{background:#f3dfcf;color:#8a3a16;font-size:12px;padding:9px 12px;border-radius:3px;margin:12px 0 0}.who{display:inline-block;font-size:10px;font-weight:500;padding:1px 8px;border-radius:10px;margin-right:8px;vertical-align:2px;letter-spacing:.5px}.who.vm{background:#c75524;color:#fff9f0}.who.sy{background:#69754e;color:#fff9f0}.who.all{background:var(--tea);color:var(--ink)}.stay-grid.four{grid-template-columns:repeat(2,1fr)}.cands{list-style:none;padding:0;margin:12px 0 0}.cands li{border-top:1px solid var(--line);padding:10px 0;font-size:12px;color:var(--muted);line-height:1.7}.stay .cands a,.birthday .cands a{margin-top:0;font-size:13px;color:var(--ink);font-weight:500;padding-bottom:1px;border-bottom:1px solid var(--ink);display:inline}.birthday .cands li{border-color:#cdb89d;color:#695342}.prep-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;padding-top:40px;border-top:1px solid var(--line)}.prep-grid h3{font:500 20px var(--serif);margin:0 0 12px}.prep-grid h3.sub{margin-top:32px}.checklist{list-style:none;padding:0;margin:0;font-size:13px}.checklist li{padding:8px 0 8px 26px;border-bottom:1px solid var(--line);position:relative}.checklist li:before{content:'';position:absolute;left:0;top:14px;width:11px;height:11px;border:1px solid var(--orange);border-radius:2px}.phrase{display:grid;grid-template-columns:1fr 1.2fr;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}.phrase span:last-child{color:var(--orange)}.emer{font-size:12px;color:var(--muted);margin:10px 0 0}@media(max-width:640px){.stay-grid.four{grid-template-columns:1fr}.prep-grid{grid-template-columns:1fr;gap:36px}}
 .src{display:inline-block;font-size:10px;padding:0 7px;border-radius:9px;margin-left:4px;vertical-align:1px;white-space:nowrap}.src.orig{background:#c75524;color:#fff9f0}.src.early{background:#e8d9c4;color:#44382f}.src.new{background:#69754e;color:#fff9f0}
 .ico{width:1.15em;height:1.15em;vertical-align:-.2em;display:inline-block}.eyebrow .ico{width:14px;height:14px;margin-right:7px;vertical-align:-2px}.ribbon i .ico{width:15px;height:15px;vertical-align:-3px}.note-ico{width:16px;height:16px;margin-right:6px;vertical-align:-3px}.deco{position:absolute;pointer-events:none;z-index:1}.map-paper .deco{z-index:2}.map-paper svg.d-tg1{width:64px;height:64px;left:-14px;top:70px;transform:rotate(-14deg)}.map-paper svg.d-tg2{width:38px;height:38px;left:-22px;top:134px;transform:rotate(18deg)}.map-paper svg.d-bl1{width:24px;height:24px;left:36px;top:126px}.map-paper svg.d-slice1{width:58px;height:58px;right:-16px;bottom:58px;transform:rotate(12deg)}.birthday{position:relative}.d-cake{width:58px;height:72px;right:26px;top:-30px;transform:rotate(8deg)}.stays-section{position:relative;overflow:hidden}.d-slice2{width:190px;height:190px;right:-50px;top:-50px;opacity:.22}.d-bl2{width:34px;height:34px;right:150px;top:40px;opacity:.9}.stays-section .wrap{position:relative;z-index:2}.fb-tg{width:54px;height:54px;margin-bottom:10px}.foot-line{display:inline-flex;align-items:center;gap:6px}.foot-line .ico{width:16px;height:16px}@media(max-width:640px){.map-paper svg.d-tg1{width:46px;height:46px;left:-6px;top:46px}.map-paper svg.d-tg2{width:26px;height:26px;left:-8px;top:96px}.map-paper svg.d-bl1{display:none}.map-paper svg.d-slice1{width:42px;height:42px;right:-6px}.d-cake{width:44px;height:56px;right:14px;top:-22px}.d-slice2{width:130px;height:130px}.d-bl2{display:none}}
+.mini-map{background:#eee4d3;border-radius:6px;padding:12px 12px 10px;margin:0 0 28px}.mini-map svg{width:100%;height:auto;display:block}.mm-label{font:500 12.5px var(--sans);fill:#44382f;paint-order:stroke;stroke:#eee4d3;stroke-width:4px;stroke-linejoin:round}.mm-num{font:700 10px var(--sans);fill:#fff9f0}.mm-legend{font-size:11px;color:var(--muted);margin:6px 4px 0;line-height:1.8}.mm-key{display:inline-block;width:9px;height:9px;margin-right:4px;vertical-align:-1px}.mm-key.sq{background:#44382f;border-radius:2px}.mm-key.ci{border:1.5px solid #44382f;border-radius:50%;background:#f7f2e9}
 </style>
 </head>
 <body>
@@ -96,7 +97,61 @@
         "住協才附近，晚餐在附近吃。"
       ]
     ],
-    "note": "UMU 排在 Haejigae 後面，照地理順序一路往西，不用回頭。大元家下午 15:00–16:30 休息，午餐不要拖太晚。"
+    "note": "UMU 排在 Haejigae 後面，照地理順序一路往西，不用回頭。大元家下午 15:00–16:30 休息，午餐不要拖太晚。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.507,
+              126.493,
+              "機場",
+              "start",
+              "middle",
+              0,
+              -11
+            ],
+            [
+              33.495,
+              126.528,
+              "大元家",
+              "stop",
+              "start",
+              11,
+              14
+            ],
+            [
+              33.464,
+              126.311,
+              "Haejigae／Monsant",
+              "stop",
+              "middle",
+              0,
+              -13
+            ],
+            [
+              33.411,
+              126.265,
+              "UMU",
+              "stop",
+              "start",
+              11,
+              -2
+            ],
+            [
+              33.394,
+              126.239,
+              "住：協才",
+              "stay",
+              "end",
+              -10,
+              14
+            ]
+          ]
+        }
+      ]
+    }
   },
   {
     "date": "01.10",
@@ -142,7 +197,61 @@
         "이드레국수"
       ]
     ],
-    "note": "山茶花森林在東邊的南元，所以排到下午，吃完午餐往東開剛好順路。門票和營業時間各網站寫法不同，出發前再確認。車程是估計，以導航為準。"
+    "note": "山茶花森林在東邊的南元，所以排到下午，吃完午餐往東開剛好順路。門票和營業時間各網站寫法不同，出發前再確認。車程是估計，以導航為準。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.394,
+              126.239,
+              "協才",
+              "start",
+              "end",
+              -9,
+              4
+            ],
+            [
+              33.306,
+              126.289,
+              "OSULLOC",
+              "stop",
+              "end",
+              -11,
+              4
+            ],
+            [
+              33.255,
+              126.42,
+              "中門帶魚 Norut",
+              "stop",
+              "middle",
+              0,
+              22
+            ],
+            [
+              33.293,
+              126.648,
+              "山茶花森林",
+              "stop",
+              "middle",
+              0,
+              -13
+            ],
+            [
+              33.25,
+              126.56,
+              "住：西歸浦",
+              "stay",
+              "middle",
+              0,
+              24
+            ]
+          ]
+        }
+      ]
+    }
   },
   {
     "date": "01.11",
@@ -193,7 +302,52 @@
         "숙성도 제주본점"
       ]
     ],
-    "note": "出發前一晚和當天早上都要查 1100 道路管制，車上備雪鏈。結冰、停車困難或天候差就取消，改市區咖啡廳或室內景點。"
+    "note": "出發前一晚和當天早上都要查 1100 道路管制，車上備雪鏈。結冰、停車困難或天候差就取消，改市區咖啡廳或室內景點。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.25,
+              126.56,
+              "西歸浦",
+              "start",
+              "middle",
+              0,
+              22
+            ],
+            [
+              33.357,
+              126.462,
+              "1100 高地",
+              "stop",
+              "end",
+              -12,
+              4
+            ],
+            [
+              33.392,
+              126.495,
+              "御里牧",
+              "stop",
+              "start",
+              12,
+              4
+            ],
+            [
+              33.505,
+              126.52,
+              "住：濟州市",
+              "stay",
+              "middle",
+              0,
+              -12
+            ]
+          ]
+        }
+      ]
+    }
   },
   {
     "date": "01.12",
@@ -258,7 +412,95 @@
         ""
       ]
     ],
-    "note": "榧子林在內陸，先去再往海邊走就不用回頭。榧子林和思連岳林道是不同地點，並不相連。"
+    "note": "榧子林在內陸，先去再往海邊走就不用回頭。榧子林和思連岳林道是不同地點，並不相連。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.505,
+              126.52,
+              "濟州市",
+              "start",
+              "middle",
+              0,
+              -12
+            ],
+            [
+              33.488,
+              126.807,
+              "榧子林",
+              "stop",
+              "middle",
+              0,
+              -13
+            ],
+            [
+              33.556,
+              126.796,
+              "月汀里",
+              "stop",
+              "middle",
+              0,
+              -13
+            ],
+            [
+              33.523,
+              126.856,
+              "細花",
+              "stop",
+              "start",
+              11,
+              -4
+            ],
+            [
+              33.458,
+              126.935,
+              "城山一帶",
+              "stop",
+              "start",
+              12,
+              4
+            ],
+            [
+              33.424,
+              126.93,
+              "涉地可支",
+              "stop",
+              "start",
+              12,
+              14
+            ]
+          ]
+        },
+        {
+          "who": "o",
+          "dash": true,
+          "pts": [
+            [
+              33.424,
+              126.93,
+              "",
+              "none",
+              "start",
+              9,
+              4
+            ],
+            [
+              33.505,
+              126.52,
+              "",
+              "none",
+              "start",
+              9,
+              4
+            ]
+          ]
+        }
+      ],
+      "legend": "城山一帶：Audrey Gimbap、城山日出峰、Fritz Coffee。虛線：當晚住東部或回濟州市（待定）。"
+    }
   },
   {
     "date": "01.13",
@@ -319,7 +561,76 @@
         "四人"
       ]
     ],
-    "note": "只有一輛車。車留給思琪 & 玉米，Vik & Mike 搭計程車往返診所比較單純。如果 1/12 住東部，早上先把 Vik & Mike 送到診所再出發。"
+    "note": "只有一輛車。車留給思琪 & 玉米，Vik & Mike 搭計程車往返診所比較單純。如果 1/12 住東部，早上先把 Vik & Mike 送到診所再出發。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.505,
+              126.52,
+              "住：濟州市",
+              "stay",
+              "middle",
+              0,
+              -12
+            ],
+            [
+              33.487,
+              126.489,
+              "本思醫院",
+              "stop",
+              "end",
+              -11,
+              14
+            ]
+          ]
+        },
+        {
+          "who": "g",
+          "pts": [
+            [
+              33.505,
+              126.52,
+              "",
+              "none",
+              "start",
+              9,
+              4
+            ],
+            [
+              33.556,
+              126.716,
+              "London Bagel・Object",
+              "stop",
+              "middle",
+              0,
+              -13
+            ],
+            [
+              33.478,
+              126.505,
+              "樂天超市、羽球用品",
+              "stop",
+              "start",
+              12,
+              16
+            ],
+            [
+              33.505,
+              126.52,
+              "",
+              "none",
+              "start",
+              9,
+              4
+            ]
+          ]
+        }
+      ],
+      "legend": "橘色：Vik & Mike　綠色：思琪 & 玉米。London Bagel 和 Object 是隔壁（舊左邑동복로 85、87 號）。"
+    }
   },
   {
     "date": "01.14",
@@ -353,7 +664,35 @@
         "餐廳還在討論，候選放在下方「四個人的餐桌」。"
       ]
     ],
-    "note": "東門市場周邊不好停車，停公營停車場再走過去。"
+    "note": "東門市場周邊不好停車，停公營停車場再走過去。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.49,
+              126.49,
+              "住：濟州市",
+              "stay",
+              "end",
+              -10,
+              14
+            ],
+            [
+              33.513,
+              126.527,
+              "東門市場＋七星購物街",
+              "stop",
+              "start",
+              12,
+              -6
+            ]
+          ]
+        }
+      ],
+      "legend": "今天都在濟州市區，市場和購物街走路就到。"
+    }
   },
   {
     "date": "01.15",
@@ -412,11 +751,91 @@
         "思琪 & 玉米"
       ]
     ],
-    "note": "15:30 要還車，最後採買抓好時間。"
+    "note": "15:30 要還車，最後採買抓好時間。",
+    "map": {
+      "paths": [
+        {
+          "who": "o",
+          "pts": [
+            [
+              33.505,
+              126.52,
+              "住：濟州市",
+              "stay",
+              "start",
+              10,
+              -8
+            ],
+            [
+              33.507,
+              126.493,
+              "機場",
+              "stop",
+              "end",
+              -11,
+              -6
+            ]
+          ]
+        },
+        {
+          "who": "g",
+          "pts": [
+            [
+              33.507,
+              126.493,
+              "",
+              "none",
+              "start",
+              9,
+              4
+            ],
+            [
+              33.425,
+              126.64,
+              "思連岳林道",
+              "stop",
+              "middle",
+              0,
+              22
+            ],
+            [
+              33.49,
+              126.49,
+              "Mayonnaise・採買・還車",
+              "stop",
+              "end",
+              -11,
+              16
+            ],
+            [
+              33.507,
+              126.493,
+              "",
+              "none",
+              "start",
+              9,
+              4
+            ]
+          ]
+        }
+      ],
+      "legend": "橘色：Vik & Mike 09:00 機場下車　綠色：思琪 & 玉米玩到 15:30 還車，17:00 到機場。"
+    }
   }
 ];
+const ISL=document.querySelector('#island-map svg > path').getAttribute('d');
+const PJ=(la,lo)=>[58.9+(lo-126.163)*627,71.4+(33.56-la)*745];
+function miniMap(d){if(!d.map)return'';let n=0;const col={o:'#c75524',g:'#69754e'};let segs='',dots='',labels='';
+d.map.paths.forEach(p=>{const w=p.who||'o',c=col[w],xy=p.pts.map(q=>PJ(q[0],q[1]));
+for(let k=0;k<xy.length-1;k++){const[x1,y1]=xy[k],[x2,y2]=xy[k+1];const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy)||1,s=Math.min(10,L/3);segs+=`<line x1="${(x1+dx/L*s).toFixed(1)}" y1="${(y1+dy/L*s).toFixed(1)}" x2="${(x2-dx/L*s).toFixed(1)}" y2="${(y2-dy/L*s).toFixed(1)}" stroke="${c}" stroke-width="2.4" stroke-linecap="round" ${p.dash?'stroke-dasharray="5 5" opacity=".7"':`marker-end="url(#mm-${w})"`}/>`}
+p.pts.forEach((q,k)=>{const[x,y]=xy[k],kind=q[3];if(kind==='none')return;
+if(kind==='stay')dots+=`<rect x="${x-6.5}" y="${y-6.5}" width="13" height="13" rx="2" fill="#44382f" stroke="#f7f2e9" stroke-width="2"/>`;
+else if(kind==='start')dots+=`<circle cx="${x}" cy="${y}" r="5" fill="#f7f2e9" stroke="#44382f" stroke-width="1.6"/>`;
+else{n++;dots+=`<circle cx="${x}" cy="${y}" r="8.5" fill="${c}" stroke="#f7f2e9" stroke-width="2"/><text x="${x}" y="${y+3.8}" text-anchor="middle" class="mm-num">${n}</text>`}
+if(q[2])labels+=`<text x="${x+q[5]}" y="${y+q[6]}" text-anchor="${q[4]}" class="mm-label">${q[2]}</text>`})});
+return `<svg viewBox="40 50 575 300" role="img" aria-label="${d.date} 路線示意圖"><defs>${['o','g'].map(k=>`<marker id="mm-${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="${col[k]}"/></marker>`).join('')}</defs><path d="${ISL}" fill="#e0cfb5" stroke="#c9b799" stroke-width="1.2"/>${segs}${dots}${labels}</svg><p class="mm-legend"><span class="mm-key sq"></span>住宿　<span class="mm-key ci"></span>出發點　數字：當天順序${d.map.legend?'<br>'+d.map.legend:''}</p>`}
 const tabs=document.getElementById('day-tabs'),panel=document.getElementById('day-panel');
-function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div><div class="timeline">${d.stops.map(s=>`<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note"><svg class="ico note-ico" aria-hidden="true"><use href="#tg-slice"/></svg>旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
+function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div>${d.map?`<div class="mini-map">${miniMap(d)}</div>`:''}<div class="timeline">${d.stops.map(s=>`<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note"><svg class="ico note-ico" aria-hidden="true"><use href="#tg-slice"/></svg>旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
 days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-tab';b.id=`tab-${i}`;b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-controls','day-panel');b.innerHTML=`<span>DAY 0${i+1}</span><strong>${d.date}</strong><span>${d.week}</span>`;b.addEventListener('click',()=>render(i));b.addEventListener('keydown',e=>{let j=i;if(e.key==='ArrowRight')j=(i+1)%7;else if(e.key==='ArrowLeft')j=(i+6)%7;else if(e.key==='Home')j=0;else if(e.key==='End')j=6;else return;e.preventDefault();render(j,true)});tabs.append(b)});render(0);
 document.getElementById('share').addEventListener('click',async()=>{try{const data={title:document.title,text:'一起去濟州，逆時鐘慢慢玩。',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);toast('旅程連結已複製，可以傳給同行朋友了。')}}catch(e){if(e.name!=='AbortError')toast('請複製瀏覽器網址，分享這份旅程。')}});
 let timer;function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('visible'),3500)}
