@@ -14,6 +14,7 @@
 .src{display:inline-block;font-size:10px;padding:0 7px;border-radius:9px;margin-left:4px;vertical-align:1px;white-space:nowrap}.src.orig{background:#c75524;color:#fff9f0}.src.early{background:#e8d9c4;color:#44382f}.src.new{background:#69754e;color:#fff9f0}
 .ico{width:1.15em;height:1.15em;vertical-align:-.2em;display:inline-block}.eyebrow .ico{width:14px;height:14px;margin-right:7px;vertical-align:-2px}.ribbon i .ico{width:15px;height:15px;vertical-align:-3px}.note-ico{width:16px;height:16px;margin-right:6px;vertical-align:-3px}.deco{position:absolute;pointer-events:none;z-index:1}.map-paper .deco{z-index:2}.map-paper svg.d-tg1{width:64px;height:64px;left:-14px;top:70px;transform:rotate(-14deg)}.map-paper svg.d-tg2{width:38px;height:38px;left:-22px;top:134px;transform:rotate(18deg)}.map-paper svg.d-bl1{width:24px;height:24px;left:36px;top:126px}.map-paper svg.d-slice1{width:58px;height:58px;right:-16px;bottom:58px;transform:rotate(12deg)}.birthday{position:relative}.d-cake{width:58px;height:72px;right:26px;top:-30px;transform:rotate(8deg)}.stays-section{position:relative;overflow:hidden}.d-slice2{width:190px;height:190px;right:-50px;top:-50px;opacity:.22}.d-bl2{width:34px;height:34px;right:150px;top:40px;opacity:.9}.stays-section .wrap{position:relative;z-index:2}.fb-tg{width:54px;height:54px;margin-bottom:10px}.foot-line{display:inline-flex;align-items:center;gap:6px}.foot-line .ico{width:16px;height:16px}@media(max-width:640px){.map-paper svg.d-tg1{width:46px;height:46px;left:-6px;top:46px}.map-paper svg.d-tg2{width:26px;height:26px;left:-8px;top:96px}.map-paper svg.d-bl1{display:none}.map-paper svg.d-slice1{width:42px;height:42px;right:-6px}.d-cake{width:44px;height:56px;right:14px;top:-22px}.d-slice2{width:130px;height:130px}.d-bl2{display:none}}
 .mini-map{background:#eee4d3;border-radius:6px;padding:12px 12px 10px;margin:0 0 28px}.mini-map svg{width:100%;height:auto;display:block}.mm-label{font:500 12.5px var(--sans);fill:#44382f;paint-order:stroke;stroke:#eee4d3;stroke-width:4px;stroke-linejoin:round}.mm-num{font:700 10px var(--sans);fill:#fff9f0}.mm-legend{font-size:11px;color:var(--muted);margin:6px 4px 0;line-height:1.8}.mm-key{display:inline-block;width:9px;height:9px;margin-right:4px;vertical-align:-1px}.mm-key.sq{background:#44382f;border-radius:2px}.mm-key.ci{border:1.5px solid #44382f;border-radius:50%;background:#f7f2e9}
+.drive-gap{position:relative;height:30px;margin:-10px 0 14px}.drive-gap span{position:absolute;left:-36px;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:8px;font-size:11px;color:#5b6640;background:var(--cream);padding:2px 10px 2px 0;white-space:nowrap}.car-ico{width:19px;height:19px;border-radius:50%;background:#69754e;color:#fff9f0;display:inline-grid;place-items:center}.car-ico svg{width:12px;height:12px}@media(max-width:640px){.drive-gap span{left:-30px;font-size:10px;white-space:normal}}
 </style>
 </head>
 <body>
@@ -22,6 +23,7 @@
 <main id="home"><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
 <symbol id="tg" viewBox="0 0 64 64"><circle cx="32" cy="37" r="22" fill="#ea7a2c" stroke="#c75524" stroke-width="1.4"/><ellipse cx="23" cy="29" rx="6.5" ry="3.8" fill="#f8a866" opacity=".75" transform="rotate(-35 23 29)"/><g fill="#c75524" opacity=".3"><circle cx="40" cy="44" r="1"/><circle cx="34" cy="50" r="1"/><circle cx="44" cy="35" r="1"/><circle cx="26" cy="46" r="1"/><circle cx="38" cy="27" r=".9"/></g><circle cx="32" cy="15.5" r="2.6" fill="#5f6b45"/><path d="M33 14 C38 5 50 3 57 7 C51 14 41 17 33 14 Z" fill="#69754e"/><path d="M34.5 13.5 C41 10 48 8.5 54.5 7.5" stroke="#9aa877" stroke-width="1" fill="none"/></symbol>
 <symbol id="tg-slice" viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#ea7a2c"/><circle cx="32" cy="32" r="25.5" fill="#fbe5c8"/><circle cx="32" cy="32" r="23.5" fill="#f39b4b"/><g stroke="#fbe5c8" stroke-width="1.8" stroke-linecap="round"><line x1="32" y1="32" x2="54.0" y2="32.0"/><line x1="32" y1="32" x2="49.8" y2="44.9"/><line x1="32" y1="32" x2="38.8" y2="52.9"/><line x1="32" y1="32" x2="25.2" y2="52.9"/><line x1="32" y1="32" x2="14.2" y2="44.9"/><line x1="32" y1="32" x2="10.0" y2="32.0"/><line x1="32" y1="32" x2="14.2" y2="19.1"/><line x1="32" y1="32" x2="25.2" y2="11.1"/><line x1="32" y1="32" x2="38.8" y2="11.1"/><line x1="32" y1="32" x2="49.8" y2="19.1"/></g><circle cx="32" cy="32" r="2.6" fill="#fbe5c8"/></symbol>
+<symbol id="car" viewBox="0 0 24 24"><path d="M5.5 11 7.6 6.2A2 2 0 0 1 9.4 5h5.2a2 2 0 0 1 1.8 1.2L18.5 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="3" y="10.5" width="18" height="6.5" rx="2" fill="currentColor"/><circle cx="7.5" cy="17.5" r="2.2" fill="currentColor"/><circle cx="16.5" cy="17.5" r="2.2" fill="currentColor"/></symbol>
 <symbol id="blossom" viewBox="0 0 32 32"><g fill="#fffaf2" stroke="#e0cfb5" stroke-width=".8"><ellipse cx="16" cy="8.5" rx="4.2" ry="7" transform="rotate(0 16 16)"/><ellipse cx="16" cy="8.5" rx="4.2" ry="7" transform="rotate(72 16 16)"/><ellipse cx="16" cy="8.5" rx="4.2" ry="7" transform="rotate(144 16 16)"/><ellipse cx="16" cy="8.5" rx="4.2" ry="7" transform="rotate(216 16 16)"/><ellipse cx="16" cy="8.5" rx="4.2" ry="7" transform="rotate(288 16 16)"/></g><circle cx="16" cy="16" r="3.2" fill="#f2c14e"/></symbol>
 <symbol id="tg-candle" viewBox="0 0 64 80"><g transform="translate(0 16)"><circle cx="32" cy="37" r="22" fill="#ea7a2c" stroke="#c75524" stroke-width="1.4"/><ellipse cx="23" cy="29" rx="6.5" ry="3.8" fill="#f8a866" opacity=".75" transform="rotate(-35 23 29)"/><g fill="#c75524" opacity=".3"><circle cx="40" cy="44" r="1"/><circle cx="34" cy="50" r="1"/><circle cx="44" cy="35" r="1"/><circle cx="26" cy="46" r="1"/><circle cx="38" cy="27" r=".9"/></g><circle cx="32" cy="15.5" r="2.6" fill="#5f6b45"/></g><rect x="29.5" y="8" width="5" height="22" rx="1.5" fill="#fffaf2" stroke="#d9cdbb"/><path d="M29.5 14 l5 -3 M29.5 20 l5 -3 M29.5 26 l5 -3" stroke="#c75524" stroke-width="1.2"/><path d="M32 1 C35 5 35 8 32 8.5 C29 8 29 5 32 1 Z" fill="#f2c14e"/></symbol>
 </defs></svg>
@@ -71,13 +73,17 @@
         "11:30",
         "午餐：大元家 대원가",
         "私房鮑魚海鮮鍋，大顆鮑魚疊滿一鍋，最後加麵。地址：제주시 도남로16길 15，電話 064-753-3030。營業 09:00–21:00，15:00–16:30 休息。",
-        "대원가 도남로16길 15"
+        "대원가 도남로16길 15",
+        "",
+        "約 15 分鐘（租車公司 → 大元家）"
       ],
       [
         "13:30",
         "咖啡廳選項 A：Haejigae 해지개",
         "愛月咖啡街最裡面的海景咖啡店。地址：제주시 애월읍 애월북서길 52。門口不好停車，對面有收費停車場。",
-        "해지개 애월북서길 52"
+        "해지개 애월북서길 52",
+        "",
+        "約 35 分鐘"
       ],
       [
         "13:30",
@@ -89,16 +95,20 @@
         "15:30",
         "UMU 翰林店",
         "只能外帶，買了帶回民宿吃。電話 +82 10-6705-0064。",
-        "우무 한림"
+        "우무 한림",
+        "",
+        "約 20 分鐘"
       ],
       [
         "16:00",
         "開到西歸浦入住＋晚餐",
-        "翰林開到西歸浦約 1 小時，入住天地淵欣欣飯店，晚餐在飯店附近吃。",
-        "신신호텔 천지연"
+        "入住天地淵欣欣飯店，晚餐在飯店附近吃。",
+        "신신호텔 천지연",
+        "",
+        "約 1 小時"
       ]
     ],
-    "note": "UMU 排在咖啡廳後面，照地理順序往西走，買完再往南開到西歸浦。大元家下午 15:00–16:30 休息，午餐不要拖太晚。",
+    "note": "UMU 排在咖啡廳後面，照地理順序往西走，買完再往南開到西歸浦。大元家下午 15:00–16:30 休息，午餐不要拖太晚。時間軸上的車程是估計，以 Naver Map 導航為準。",
     "map": {
       "paths": [
         {
@@ -171,31 +181,42 @@
       [
         "09:30",
         "OSULLOC 茶博物館",
-        "綠茶霜淇淋、茶園拍照，伴手禮可以在這裡先買，旁邊就是 innisfree 濟州之家。西歸浦開過去約 40 分鐘。",
-        "오설록 티뮤지엄"
+        "綠茶霜淇淋、茶園拍照，伴手禮可以在這裡先買，旁邊就是 innisfree 濟州之家。",
+        "오설록 티뮤지엄",
+        "",
+        "約 40 分鐘"
       ],
       [
         "12:00",
         "午餐：中門帶魚 Norut｜중문갈치 노릇",
         "辣燉帶魚搭鍋飯，不吃辣可選烤帶魚。地址：서귀포시 1100로49번길 28-19。",
-        "중문갈치 노릇 1100로49번길 28-19"
+        "중문갈치 노릇 1100로49번길 28-19",
+        "",
+        "約 25 分鐘"
       ],
       [
         "14:00",
         "山茶花森林 동백포레스트",
         "1 公里長的冬山茶花步道，有咖啡廳和拍照點，只在 11 月到 2 月開放。地址：서귀포시 남원읍 생기악로 53-38。營業約 09:00–18:00（17:00 停止入場），成人約 ₩7,000，免費停車。Norut 開過來約 40 分鐘。",
-        "동백포레스트"
+        "동백포레스트",
+        "",
+        "約 35–40 分鐘"
       ],
       [
         "16:30",
         "回飯店休息",
-        "山茶花森林開回西歸浦市區約 20 分鐘，先回飯店休息，傍晚再出門。"
+        "先回飯店休息，傍晚再出門。",
+        "",
+        "",
+        "約 20 分鐘"
       ],
       [
         "18:00",
         "晚餐：西歸浦每日偶來市場",
         "每天開，烤黑豬肉串、橘子汁、生魚片拼盤，邊逛邊吃。離飯店不遠。",
-        "서귀포매일올레시장"
+        "서귀포매일올레시장",
+        "",
+        "約 5 分鐘"
       ]
     ],
     "note": "今天以西歸浦為中心，先往西再往東。山茶花森林的門票和營業時間各網站寫法不同，出發前再確認。車程是估計，以導航為準。",
@@ -272,38 +293,49 @@
         "09:00",
         "漢拏山 1100 高地",
         "白鹿雕像、最高的 GS25。",
-        "1100고지휴게소"
+        "1100고지휴게소",
+        "",
+        "約 40 分鐘"
       ],
       [
         "10:30",
         "御里牧入口／步道",
         "雪地健行，或玩雪堆雪人。",
-        "어리목"
+        "어리목",
+        "",
+        "約 10 分鐘"
       ],
       [
         "11:30",
         "往北下山到濟州市",
-        "御里牧在漢拏山北側，開到新濟州約 25–30 分鐘。"
+        "御里牧在漢拏山北側，往北下山就是濟州市。"
       ],
       [
         "午餐",
         "熟成到 濟州本店（新濟州）",
         "熟成黑豬肉，大約下午一兩點。地址：제주시 제원길 30 2–3樓，電話 064-743-8877，營業 11:30–22:00。到了先抽號，候位時可以先去附近逛。",
-        "숙성도 제주본점 제원길 30"
+        "숙성도 제주본점 제원길 30",
+        "",
+        "約 25–30 分鐘"
       ],
       [
         "飯後",
         "樂天免稅店（濟州夢之塔）或新羅免稅店",
         "兩家都在老衡、延洞一帶，開車 5 分鐘內。帶護照和回程機票資訊，買的東西在濟州機場國際線出境時取貨。",
-        "롯데면세점 제주점"
+        "롯데면세점 제주점",
+        "",
+        "約 5 分鐘"
       ],
       [
         "下午",
         "濟州市區飯店入住、休息",
-        "飯店還在找。"
+        "飯店還在找。",
+        "",
+        "",
+        "約 10 分鐘"
       ]
     ],
-    "note": "出發前一晚和當天早上都要查 1100 道路管制，車上備雪鏈。結冰、停車困難或天候差就取消上山，直接進濟州市吃飯、逛免稅店。",
+    "note": "出發前一晚和當天早上都要查 1100 道路管制，車上備雪鏈。結冰、停車困難或天候差就取消上山，直接進濟州市吃飯、逛免稅店。時間軸上的車程是估計，以 Naver Map 導航為準。",
     "map": {
       "paths": [
         {
@@ -372,39 +404,50 @@
       [
         "08:00",
         "退房，從濟州市出發",
-        "濟州市區開到榧子林約 40 分鐘。"
+        ""
       ],
       [
         "09:00",
         "榧子林（비자림）",
         "林間散步，₩3,000／人。",
-        "비자림"
+        "비자림",
+        "",
+        "約 45–50 分鐘"
       ],
       [
         "12:00",
         "午餐：Audrey Gimbap",
         "오드리김밥，城山日出峰附近。辣炒年糕＋黑豬肉紫菜包飯。營業 09:00–15:00、17:00–19:00，週日公休。電話 064-783-7879。",
-        "오드리김밥"
+        "오드리김밥",
+        "",
+        "約 30 分鐘"
       ],
       [
         "13:30",
         "城山日出峰＋Fritz Coffee 城山店",
         "兩個點就在旁邊。先爬日出峰，上下來回約 1 小時；下來到 Fritz 坐著看海和日出峰休息。Fritz 營業 08:00–19:00。",
-        "성산일출봉"
+        "성산일출봉",
+        "",
+        "約 5 分鐘"
       ],
       [
         "16:30",
         "涉地可支",
         "看夕陽，日落約 17:50。",
-        "섭지코지"
+        "섭지코지",
+        "",
+        "約 15 分鐘"
       ],
       [
         "18:00",
         "入住＋晚餐",
-        ""
+        "",
+        "",
+        "",
+        "住城山約 10 分鐘；回濟州市約 1 小時"
       ]
     ],
-    "note": "榧子林在內陸，先去再往海邊走就不用回頭。榧子林和思連岳林道是不同地點，並不相連。",
+    "note": "榧子林在內陸，先去再往海邊走就不用回頭。榧子林和思連岳林道是不同地點，並不相連。時間軸上的車程是估計，以 Naver Map 導航為準。",
     "map": {
       "paths": [
         {
@@ -809,7 +852,7 @@ else{n++;dots+=`<circle cx="${x}" cy="${y}" r="8.5" fill="${c}" stroke="#f7f2e9"
 if(q[2])labels+=`<text x="${x+q[5]}" y="${y+q[6]}" text-anchor="${q[4]}" class="mm-label">${q[2]}</text>`})});
 return `<svg viewBox="40 50 575 300" role="img" aria-label="${d.date} 路線示意圖"><defs>${['o','g'].map(k=>`<marker id="mm-${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="${col[k]}"/></marker>`).join('')}</defs><path d="${ISL}" fill="#e0cfb5" stroke="#c9b799" stroke-width="1.2"/>${segs}${dots}${labels}</svg><p class="mm-legend"><span class="mm-key sq"></span>住宿　<span class="mm-key ci"></span>出發點　數字：當天順序${d.map.legend?'<br>'+d.map.legend:''}</p>`}
 const tabs=document.getElementById('day-tabs'),panel=document.getElementById('day-panel');
-function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div>${d.map?`<div class="mini-map">${miniMap(d)}</div>`:''}<div class="timeline">${d.stops.map(s=>`<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note"><svg class="ico note-ico" aria-hidden="true"><use href="#tg-slice"/></svg>旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
+function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div>${d.map?`<div class="mini-map">${miniMap(d)}</div>`:''}<div class="timeline">${d.stops.map(s=>`${s[5]?`<div class="drive-gap"><span><i class="car-ico"><svg aria-hidden="true"><use href="#car"/></svg></i>車程${s[5]}</span></div>`:''}<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note"><svg class="ico note-ico" aria-hidden="true"><use href="#tg-slice"/></svg>旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
 days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-tab';b.id=`tab-${i}`;b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-controls','day-panel');b.innerHTML=`<span>DAY 0${i+1}</span><strong>${d.date}</strong><span>${d.week}</span>`;b.addEventListener('click',()=>render(i));b.addEventListener('keydown',e=>{let j=i;if(e.key==='ArrowRight')j=(i+1)%7;else if(e.key==='ArrowLeft')j=(i+6)%7;else if(e.key==='Home')j=0;else if(e.key==='End')j=6;else return;e.preventDefault();render(j,true)});tabs.append(b)});render(0);
 document.getElementById('share').addEventListener('click',async()=>{try{const data={title:document.title,text:'一起去濟州，逆時鐘慢慢玩。',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);toast('旅程連結已複製，可以傳給同行朋友了。')}}catch(e){if(e.name!=='AbortError')toast('請複製瀏覽器網址，分享這份旅程。')}});
 let timer;function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('visible'),3500)}
