@@ -15,7 +15,7 @@
 .ico{width:1.15em;height:1.15em;vertical-align:-.2em;display:inline-block}.eyebrow .ico{width:14px;height:14px;margin-right:7px;vertical-align:-2px}.ribbon i .ico{width:15px;height:15px;vertical-align:-3px}.note-ico{width:16px;height:16px;margin-right:6px;vertical-align:-3px}.deco{position:absolute;pointer-events:none;z-index:1}.map-paper .deco{z-index:2}.map-paper svg.d-tg1{width:64px;height:64px;left:-14px;top:70px;transform:rotate(-14deg)}.map-paper svg.d-tg2{width:38px;height:38px;left:-22px;top:134px;transform:rotate(18deg)}.map-paper svg.d-bl1{width:24px;height:24px;left:36px;top:126px}.map-paper svg.d-slice1{width:58px;height:58px;right:-16px;bottom:58px;transform:rotate(12deg)}.birthday{position:relative}.d-cake{width:58px;height:72px;right:26px;top:-30px;transform:rotate(8deg)}.stays-section{position:relative;overflow:hidden}.d-slice2{width:190px;height:190px;right:-50px;top:-50px;opacity:.22}.d-bl2{width:34px;height:34px;right:150px;top:40px;opacity:.9}.stays-section .wrap{position:relative;z-index:2}.fb-tg{width:54px;height:54px;margin-bottom:10px}.foot-line{display:inline-flex;align-items:center;gap:6px}.foot-line .ico{width:16px;height:16px}@media(max-width:640px){.map-paper svg.d-tg1{width:46px;height:46px;left:-6px;top:46px}.map-paper svg.d-tg2{width:26px;height:26px;left:-8px;top:96px}.map-paper svg.d-bl1{display:none}.map-paper svg.d-slice1{width:42px;height:42px;right:-6px}.d-cake{width:44px;height:56px;right:14px;top:-22px}.d-slice2{width:130px;height:130px}.d-bl2{display:none}}
 .mini-map{background:#eee4d3;border-radius:6px;padding:12px 12px 10px;margin:0 0 28px}.mini-map svg{width:100%;height:auto;display:block}.mm-label{font:500 12.5px var(--sans);fill:#44382f;paint-order:stroke;stroke:#eee4d3;stroke-width:4px;stroke-linejoin:round}.mm-num{font:700 10px var(--sans);fill:#fff9f0}.mm-legend{font-size:11px;color:var(--muted);margin:6px 4px 0;line-height:1.8}.mm-key{display:inline-block;width:9px;height:9px;margin-right:4px;vertical-align:-1px}.mm-key.sq{background:#44382f;border-radius:2px}.mm-key.ci{border:1.5px solid #44382f;border-radius:50%;background:#f7f2e9}
 .drive-gap{position:relative;height:30px;margin:-10px 0 14px}.drive-gap span{position:absolute;left:-36px;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:8px;font-size:11px;color:#5b6640;background:var(--cream);padding:2px 10px 2px 0;white-space:nowrap}.car-ico{width:19px;height:19px;border-radius:50%;background:#69754e;color:#fff9f0;display:inline-grid;place-items:center}.car-ico svg{width:12px;height:12px}@media(max-width:640px){.drive-gap span{left:-30px;font-size:10px;white-space:normal}}
-.shop-group+.shop-group{margin-top:40px}.shop-area{font:500 15px/1.5 var(--serif);margin-bottom:14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}.shop-area small{font:400 12px var(--sans,inherit);color:var(--muted)}</style>
+.shop-group+.shop-group{margin-top:40px}.shop-area{font:500 15px/1.5 var(--serif);margin-bottom:14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}.shop-area small{font:400 12px var(--sans,inherit);color:var(--muted)}.stop.side{padding-bottom:22px}.stop.side:before{width:9px;height:9px;border-radius:1px;transform:rotate(45deg);background:#fbf3e6;border:1.5px solid var(--orange);left:-31.5px;top:22px}.stop.side:after{content:'';position:absolute;left:-22px;top:26px;width:18px;border-top:1.5px dashed #d9a07f}.stop.side time{color:var(--orange);font-size:10px;letter-spacing:.06em;padding-top:16px;line-height:1.5}.side-card{display:grid;grid-template-columns:150px 1fr;gap:14px;border:1.5px dashed #d9a07f;border-radius:10px;background:#fbf3e6;padding:12px}.side-card img{width:100%;height:100%;min-height:96px;object-fit:cover;border-radius:6px;display:block}.side-tag{display:inline-block;font-size:10px;letter-spacing:.05em;color:var(--orange);border:1px solid #d9a07f;border-radius:99px;padding:1px 8px;margin-bottom:6px;background:#fff8ee}.side-card h4 small{font-size:11px;color:var(--muted);font-weight:400}.side-meta{margin-top:6px!important;line-height:1.7}.side-meta b{font-weight:500;color:#7c6c5c;margin-right:6px}.stop-img{display:block;width:100%;max-width:300px;aspect-ratio:47/20;object-fit:cover;border-radius:6px;margin-top:9px}.mm-side{font-style:italic;fill:#a4532d}.mm-key.di{display:inline-block;width:8px;height:8px;border:1.5px solid #c75524;background:#fbf3e6;transform:rotate(45deg);margin:0 4px 0 2px;vertical-align:1px}.zoom-title{font-size:11px;color:var(--orange);letter-spacing:.08em;margin:0 0 6px}@media(max-width:640px){.side-card{grid-template-columns:1fr}.side-card img{height:130px}.stop.side:before{left:-25.5px}.stop.side:after{left:-16px;width:12px}}</style>
 </head>
 <body>
 <script>if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)history.replaceState(null,'',location.pathname+location.search);</script>
@@ -178,7 +178,43 @@
           ]
         }
       ]
-    }
+    },
+    "side": [
+      {
+        "after": 4,
+        "name": "Mumu Jeju",
+        "kr": "무무제주",
+        "desc": "橘子角色主題的童趣紀念品店。",
+        "hours": "11:00–18:00",
+        "addr": "애월읍 봉성로3길 11（涯月內陸的봉성里）",
+        "detour": "從涯月海邊往 UMU 的路上繞進去，多開約 10 分鐘",
+        "img": "mumu",
+        "key": "무무제주",
+        "lat": 33.419,
+        "lon": 126.3114,
+        "anc": "end",
+        "dx": -9,
+        "dy": -8,
+        "z": false
+      },
+      {
+        "after": 5,
+        "name": "Garcontimide",
+        "kr": "가르송티미드",
+        "desc": "原創插畫角色，幽默可愛風。",
+        "hours": "10:00–18:00，13:00–14:00 午休",
+        "addr": "한림읍 한림로 542（UMU 是 542-1）",
+        "detour": "就在 UMU 隔壁，走路 1 分鐘",
+        "img": "garcontimide",
+        "key": "가르송티미드",
+        "lat": 33.4058,
+        "lon": 126.2565,
+        "anc": "end",
+        "dx": -9,
+        "dy": 12,
+        "z": false
+      }
+    ]
   },
   {
     "date": "01.10",
@@ -575,7 +611,9 @@
         "Object 濟州店",
         "韓國設計選物、客製商品，10:00–18:00。",
         "오브젝트 제주점",
-        "思琪 & 玉米"
+        "思琪 & 玉米",
+        "",
+        "object"
       ],
       [
         "12:00",
@@ -668,7 +706,26 @@
         }
       ],
       "legend": "橘色：Vik & Mike　綠色：思琪 & 玉米。London Bagel 和 Object 是隔壁（舊左邑동복로 85、87 號）。"
-    }
+    },
+    "side": [
+      {
+        "after": 6,
+        "name": "MY JEJU GIFT",
+        "kr": "엠와이제주",
+        "desc": "米菲兔和濟州聯名周邊、伴手禮，可以退稅。",
+        "hours": "開到午夜 00:00（開門時間待查）",
+        "addr": "제주시 삼무로 35（連洞，三武公園旁）",
+        "detour": "兩間候選飯店都在附近，晚餐後散步或開車 5 分鐘",
+        "img": "myjejugift",
+        "key": "엠와이제주",
+        "lat": 33.4901,
+        "lon": 126.4905,
+        "anc": "end",
+        "dx": -9,
+        "dy": 12,
+        "z": false
+      }
+    ]
   },
   {
     "date": "01.14",
@@ -730,6 +787,104 @@
         }
       ],
       "legend": "今天都在濟州市區，市場和購物街走路就到。"
+    },
+    "side": [
+      {
+        "after": 1,
+        "name": "Playworks x Jeju",
+        "kr": "플레이웍스",
+        "desc": "清邁創作者 Playworks 的插畫，加上濟州在地元素的設計文創。",
+        "hours": "12:00–18:30",
+        "addr": "제주시 산지로 47（東門市場北邊，山地川旁）",
+        "detour": "從東門市場走路約 5 分鐘",
+        "img": "playworks",
+        "key": "플레이웍스",
+        "lat": 33.5133,
+        "lon": 126.5283,
+        "anc": "start",
+        "dx": 9,
+        "dy": 4,
+        "z": true
+      },
+      {
+        "after": 1,
+        "name": "SOMEJOGAK",
+        "kr": "섬조각",
+        "desc": "濟州島元素的可愛生活雜貨。",
+        "hours": "11:00–19:00",
+        "addr": "제주시 중앙로7길 25 1층",
+        "detour": "從東門市場走路約 5 分鐘，和 Playworks 順路",
+        "img": "somejogak",
+        "key": "섬조각 제주",
+        "lat": 33.5149,
+        "lon": 126.5274,
+        "anc": "end",
+        "dx": -9,
+        "dy": -6,
+        "z": true
+      },
+      {
+        "after": 2,
+        "name": "The Islander",
+        "kr": "더 아일랜더",
+        "desc": "兩層樓的濟州生活小物、在地明信片，可以蓋店章。",
+        "hours": "10:30–19:30",
+        "addr": "제주시 관덕로4길 7（觀德亭旁）",
+        "detour": "七星街往西走約 5 分鐘",
+        "img": "islander",
+        "key": "더 아일랜더 제주",
+        "lat": 33.5124,
+        "lon": 126.5214,
+        "anc": "start",
+        "dx": 9,
+        "dy": 13,
+        "z": true
+      },
+      {
+        "after": 2,
+        "name": "Classic Moongusa",
+        "kr": "클래식문구사",
+        "desc": "復古文具店，有集章護照。",
+        "hours": "12:00–18:00",
+        "addr": "제주시 관덕로4길 1-2（The Islander 隔壁）",
+        "detour": "跟 The Islander 一起逛",
+        "img": "classic",
+        "key": "클래식문구사",
+        "lat": 33.5126,
+        "lon": 126.5214,
+        "anc": "end",
+        "dx": -9,
+        "dy": -4,
+        "z": true
+      }
+    ],
+    "zoom": {
+      "box": [
+        33.5108,
+        33.5156,
+        126.5198,
+        126.5297
+      ],
+      "main": [
+        [
+          33.5118,
+          126.5265,
+          "東門市場"
+        ],
+        [
+          33.5132,
+          126.5254,
+          "七星購物街"
+        ]
+      ],
+      "marks": [
+        [
+          33.5133,
+          126.5216,
+          "觀德亭"
+        ]
+      ],
+      "legend": "放大到舊市區，四間小店都在走路範圍內。座標取自 Google Maps，位置是大概。"
     }
   },
   {
@@ -871,9 +1026,18 @@ if(kind==='stay')dots+=`<rect x="${x-6.5}" y="${y-6.5}" width="13" height="13" r
 else if(kind==='start')dots+=`<circle cx="${x}" cy="${y}" r="5" fill="#f7f2e9" stroke="#44382f" stroke-width="1.6"/>`;
 else{n++;dots+=`<circle cx="${x}" cy="${y}" r="8.5" fill="${c}" stroke="#f7f2e9" stroke-width="2"/><text x="${x}" y="${y+3.8}" text-anchor="middle" class="mm-num">${n}</text>`}
 if(q[2])labels+=`<text x="${x+q[5]}" y="${y+q[6]}" text-anchor="${q[4]}" class="mm-label">${q[2]}</text>`})});
-return `<svg viewBox="40 50 575 300" role="img" aria-label="${d.date} 路線示意圖"><defs>${['o','g'].map(k=>`<marker id="mm-${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="${col[k]}"/></marker>`).join('')}</defs><path d="${ISL}" fill="#e0cfb5" stroke="#c9b799" stroke-width="1.2"/>${segs}${dots}${labels}</svg><p class="mm-legend"><span class="mm-key sq"></span>住宿　<span class="mm-key ci"></span>出發點　數字：當天順序${d.map.legend?'<br>'+d.map.legend:''}</p>`}
+let side='';(d.side||[]).filter(t=>!t.z).forEach(t=>{const[x,y]=PJ(t.lat,t.lon);let best=null,bd=1e9;d.map.paths.forEach(p=>p.pts.forEach(q=>{const[qx,qy]=PJ(q[0],q[1]),dd=Math.hypot(qx-x,qy-y);if(dd<bd){bd=dd;best=[qx,qy]}}));if(best)side+=`<line x1="${best[0]}" y1="${best[1]}" x2="${x}" y2="${y}" stroke="#c75524" stroke-width="1.4" stroke-dasharray="2 3" opacity=".8"/>`;side+=`<rect x="${x-5}" y="${y-5}" width="10" height="10" transform="rotate(45 ${x} ${y})" fill="#fbf3e6" stroke="#c75524" stroke-width="1.6"/><text x="${x+t.dx}" y="${y+t.dy}" text-anchor="${t.anc}" class="mm-label mm-side">${t.name}</text>`});
+return `<svg viewBox="40 50 575 300" role="img" aria-label="${d.date} 路線示意圖"><defs>${['o','g'].map(k=>`<marker id="mm-${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="${col[k]}"/></marker>`).join('')}</defs><path d="${ISL}" fill="#e0cfb5" stroke="#c9b799" stroke-width="1.2"/>${segs}${side}${dots}${labels}</svg><p class="mm-legend"><span class="mm-key sq"></span>住宿　<span class="mm-key ci"></span>出發點　數字：當天順序${d.side?'　<span class="mm-key di"></span>支線小店（虛線，可考慮）':''}${d.map.legend?'<br>'+d.map.legend:''}</p>`}
+
+function zoomMap(d){const z=d.zoom;if(!z)return'';const[la0,la1,lo0,lo1]=z.box,W=600,H=330,P=(la,lo)=>[40+(lo-lo0)/(lo1-lo0)*(W-80),30+(la1-la)/(la1-la0)*(H-60)];let g='';const m=z.main.map(q=>P(q[0],q[1]));
+for(let k=0;k<m.length-1;k++)g+=`<line x1="${m[k][0]}" y1="${m[k][1]}" x2="${m[k+1][0]}" y2="${m[k+1][1]}" stroke="#c75524" stroke-width="2.4" stroke-linecap="round"/>`;
+(d.side||[]).filter(t=>t.z).forEach(t=>{const[x,y]=P(t.lat,t.lon);let b=m[0],bd=1e9;m.forEach(q=>{const dd=Math.hypot(q[0]-x,q[1]-y);if(dd<bd){bd=dd;b=q}});g+=`<line x1="${b[0]}" y1="${b[1]}" x2="${x}" y2="${y}" stroke="#c75524" stroke-width="1.5" stroke-dasharray="3 4" opacity=".85"/>`});
+(z.marks||[]).forEach(q=>{const[x,y]=P(q[0],q[1]);g+=`<circle cx="${x}" cy="${y}" r="3.5" fill="#9c876d"/><text x="${x}" y="${y-22}" text-anchor="middle" class="mm-label" fill="#7c6c5c">${q[2]}</text>`});
+m.forEach((q,k)=>{g+=`<circle cx="${q[0]}" cy="${q[1]}" r="8.5" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="${q[0]}" y="${q[1]+3.8}" text-anchor="middle" class="mm-num">${k+1}</text><text x="${q[0]}" y="${q[1]+26}" text-anchor="middle" class="mm-label">${z.main[k][2]}</text>`});
+(d.side||[]).filter(t=>t.z).forEach(t=>{const[x,y]=P(t.lat,t.lon);g+=`<rect x="${x-5.5}" y="${y-5.5}" width="11" height="11" transform="rotate(45 ${x} ${y})" fill="#fbf3e6" stroke="#c75524" stroke-width="1.7"/><text x="${x+t.dx}" y="${y+t.dy}" text-anchor="${t.anc}" class="mm-label mm-side">${t.name}</text>`});
+return `<p class="zoom-title">舊市區放大圖</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${d.date} 舊市區小店位置"><rect x="0" y="0" width="${W}" height="${H}" rx="6" fill="#f3eadb"/><text x="${W-14}" y="22" text-anchor="end" class="mm-label" fill="#7c6c5c">北 ↑</text>${g}</svg><p class="mm-legend"><span class="mm-key di"></span>支線小店　${z.legend}</p>`}
 const tabs=document.getElementById('day-tabs'),panel=document.getElementById('day-panel');
-function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div>${d.map?`<div class="mini-map">${miniMap(d)}</div>`:''}<div class="timeline">${d.stops.map(s=>`${s[5]?`<div class="drive-gap"><span><i class="car-ico"><svg aria-hidden="true"><use href="#car"/></svg></i>車程${s[5]}</span></div>`:''}<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}</div></article>`).join('')}</div><div class="day-note"><svg class="ico note-ico" aria-hidden="true"><use href="#tg-slice"/></svg>旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
+function render(i,focus=false){const d=days[i];tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});panel.setAttribute('aria-labelledby',`tab-${i}`);panel.innerHTML=`<div class="day-layout"><div class="day-intro"><div class="day-number">0${i+1}</div><h3>${d.name}</h3><p>${d.area}</p><p>${d.desc}</p>${d.flag?`<p class="day-flag">${d.flag}</p>`:''}<div class="route-text">${d.route}</div><div class="day-stay">今晚住哪裡<br><strong>${d.stay}</strong></div></div><div>${d.map?`<div class="mini-map">${miniMap(d)}</div>`:''}${d.zoom?`<div class="mini-map zoom">${zoomMap(d)}</div>`:''}<div class="timeline">${d.stops.map((s,si)=>`${s[5]?`<div class="drive-gap"><span><i class="car-ico"><svg aria-hidden="true"><use href="#car"/></svg></i>車程${s[5]}</span></div>`:''}<article class="stop"><time>${s[0]}</time><div><h4>${s[4]?`<span class="who ${s[4]==='Vik & Mike'?'vm':s[4]==='思琪 & 玉米'?'sy':'all'}">${s[4]}</span>`:''}${s[1]}</h4>${s[2]?`<p>${s[2]}</p>`:''}${s[3]?`<a href="https://map.naver.com/p/search/${encodeURIComponent(s[3])}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a>`:''}${s[6]?`<img class="stop-img" src="img/shops/${s[6]}.jpg" alt="${s[1]} 店面" loading="lazy">`:''}</div></article>${(d.side||[]).filter(t=>t.after===si).map(t=>`<article class="stop side"><time>順路<br>可逛</time><div class="side-card"><img src="img/shops/${t.img}.jpg" alt="${t.name} 店面" loading="lazy"><div><span class="side-tag">支線・文創小店</span><h4>${t.name} <small>${t.kr}</small></h4><p>${t.desc}</p><p class="side-meta"><b>位置</b>${t.addr}<br><b>營業</b>${t.hours}<br><b>怎麼去</b>${t.detour}</p><a href="https://map.naver.com/p/search/${encodeURIComponent(t.key)}" target="_blank" rel="noopener noreferrer">在 Naver Map 搜尋 ↗</a></div></div></article>`).join('')}`).join('')}</div><div class="day-note"><svg class="ico note-ico" aria-hidden="true"><use href="#tg-slice"/></svg>旅途小記 · ${d.note}</div></div></div>`;if(focus)document.getElementById(`tab-${i}`).focus();document.querySelectorAll('[data-map-day]').forEach(e=>e.classList.toggle('active',Number(e.dataset.mapDay)===i));}
 days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-tab';b.id=`tab-${i}`;b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-controls','day-panel');b.innerHTML=`<span>DAY 0${i+1}</span><strong>${d.date}</strong><span>${d.week}</span>`;b.addEventListener('click',()=>render(i));b.addEventListener('keydown',e=>{let j=i;if(e.key==='ArrowRight')j=(i+1)%7;else if(e.key==='ArrowLeft')j=(i+6)%7;else if(e.key==='Home')j=0;else if(e.key==='End')j=6;else return;e.preventDefault();render(j,true)});tabs.append(b)});render(0);
 document.getElementById('share').addEventListener('click',async()=>{try{const data={title:document.title,text:'一起去濟州，逆時鐘慢慢玩。',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);toast('旅程連結已複製，可以傳給同行朋友了。')}}catch(e){if(e.name!=='AbortError')toast('請複製瀏覽器網址，分享這份旅程。')}});
 let timer;function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('visible'),3500)}
