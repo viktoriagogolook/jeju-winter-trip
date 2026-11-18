@@ -801,9 +801,9 @@
         "key": "플레이웍스",
         "lat": 33.5133,
         "lon": 126.5283,
-        "anc": "start",
-        "dx": 9,
-        "dy": 4,
+        "anc": "middle",
+        "dx": 0,
+        "dy": 22,
         "z": true
       },
       {
@@ -818,9 +818,9 @@
         "key": "섬조각 제주",
         "lat": 33.5149,
         "lon": 126.5274,
-        "anc": "end",
-        "dx": -9,
-        "dy": -6,
+        "anc": "middle",
+        "dx": 0,
+        "dy": -12,
         "z": true
       },
       {
@@ -835,9 +835,9 @@
         "key": "더 아일랜더 제주",
         "lat": 33.5124,
         "lon": 126.5214,
-        "anc": "start",
-        "dx": 9,
-        "dy": 13,
+        "anc": "middle",
+        "dx": 0,
+        "dy": 24,
         "z": true
       },
       {
@@ -852,9 +852,9 @@
         "key": "클래식문구사",
         "lat": 33.5126,
         "lon": 126.5214,
-        "anc": "end",
-        "dx": -9,
-        "dy": -4,
+        "anc": "middle",
+        "dx": 0,
+        "dy": -13,
         "z": true
       }
     ],
@@ -1032,7 +1032,7 @@ return `<svg viewBox="40 50 575 300" role="img" aria-label="${d.date} 路線示�
 function zoomMap(d){const z=d.zoom;if(!z)return'';const[la0,la1,lo0,lo1]=z.box,W=600,H=330,P=(la,lo)=>[40+(lo-lo0)/(lo1-lo0)*(W-80),30+(la1-la)/(la1-la0)*(H-60)];let g='';const m=z.main.map(q=>P(q[0],q[1]));
 for(let k=0;k<m.length-1;k++)g+=`<line x1="${m[k][0]}" y1="${m[k][1]}" x2="${m[k+1][0]}" y2="${m[k+1][1]}" stroke="#c75524" stroke-width="2.4" stroke-linecap="round"/>`;
 (d.side||[]).filter(t=>t.z).forEach(t=>{const[x,y]=P(t.lat,t.lon);let b=m[0],bd=1e9;m.forEach(q=>{const dd=Math.hypot(q[0]-x,q[1]-y);if(dd<bd){bd=dd;b=q}});g+=`<line x1="${b[0]}" y1="${b[1]}" x2="${x}" y2="${y}" stroke="#c75524" stroke-width="1.5" stroke-dasharray="3 4" opacity=".85"/>`});
-(z.marks||[]).forEach(q=>{const[x,y]=P(q[0],q[1]);g+=`<circle cx="${x}" cy="${y}" r="3.5" fill="#9c876d"/><text x="${x}" y="${y-22}" text-anchor="middle" class="mm-label" fill="#7c6c5c">${q[2]}</text>`});
+(z.marks||[]).forEach(q=>{const[x,y]=P(q[0],q[1]);g+=`<circle cx="${x}" cy="${y}" r="3.5" fill="#9c876d"/><text x="${x-10}" y="${y-26}" text-anchor="end" class="mm-label" fill="#7c6c5c">${q[2]}</text>`});
 m.forEach((q,k)=>{g+=`<circle cx="${q[0]}" cy="${q[1]}" r="8.5" fill="#c75524" stroke="#f7f2e9" stroke-width="2"/><text x="${q[0]}" y="${q[1]+3.8}" text-anchor="middle" class="mm-num">${k+1}</text><text x="${q[0]}" y="${q[1]+26}" text-anchor="middle" class="mm-label">${z.main[k][2]}</text>`});
 (d.side||[]).filter(t=>t.z).forEach(t=>{const[x,y]=P(t.lat,t.lon);g+=`<rect x="${x-5.5}" y="${y-5.5}" width="11" height="11" transform="rotate(45 ${x} ${y})" fill="#fbf3e6" stroke="#c75524" stroke-width="1.7"/><text x="${x+t.dx}" y="${y+t.dy}" text-anchor="${t.anc}" class="mm-label mm-side">${t.name}</text>`});
 return `<p class="zoom-title">舊市區放大圖</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${d.date} 舊市區小店位置"><rect x="0" y="0" width="${W}" height="${H}" rx="6" fill="#f3eadb"/><text x="${W-14}" y="22" text-anchor="end" class="mm-label" fill="#7c6c5c">北 ↑</text>${g}</svg><p class="mm-legend"><span class="mm-key di"></span>支線小店　${z.legend}</p>`}
